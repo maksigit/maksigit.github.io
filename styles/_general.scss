@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+.btn {
+  display: inline-block;
+  padding: 16px;
+  font-size: 16px;
+  font-family: 'Hammersmith One', sans-serif;
+  text-decoration: none;
+  transition: .4s;
+
+  &.btn-default {
+    color: $color-main;
+    border: 1px solid $color-main;
+
+    &:hover {
+      color: #fff;
+      background: $color-main;;
+    }
+  }
+}
