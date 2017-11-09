@@ -1,0 +1,52 @@
+.social {
+  .container {
+    padding: 20px 15px;
+    display: flex;
+    justify-content: space-between;
+
+    .warp-social-content {
+      max-width: 36%;
+    }
+    .warp-social-icon {
+      max-width: 63%;
+      display: flex;
+      align-items: center;
+
+      ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        li {
+          padding: 0 20px;
+
+          a {
+            display: inline-block;
+
+            .fa {
+              color: #cbcbcb;
+              &:hover {
+                color: $color-secondary;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: $screen-sm) {
+    .container {
+    flex-direction: column;
+      text-align: center;
+    .warp-social-content {
+      max-width: 100%;
+    }
+    .warp-social-icon {
+      max-width: 100%;
+      ul {
+        margin: auto;
+      }
+    }
+  }
+  }
+}

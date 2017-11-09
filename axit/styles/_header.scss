@@ -1,0 +1,89 @@
+.main-header {
+
+  .header-top {
+    background: #000;
+    position: relative;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      padding: 21px 15px;
+
+      .logo {
+        transition: .4s;
+
+        &:hover {
+          box-shadow: 0 0 25px 0 $color-secondary;
+        }
+      }
+
+      .wrap-menu {
+        display: flex;
+        align-items: center;
+
+        .menu-header {
+          li {
+            padding-left: 45px;
+
+            a {
+              display: inline-block;
+              font: $font-desc;
+              color: $color-primery;
+              transition: .4s;
+              width: 100%;
+
+              &:hover {
+                color: $color-secondary;
+              }
+            }
+            .active {
+              color: $color-secondary;
+            }
+          }
+        }
+      }
+
+      .gamburger {
+        display: none;
+        color: $color-primery;
+        cursor: pointer;
+        transition: .4s;
+        &:hover {
+          color: $color-secondary;
+        }
+      }
+
+      @media (max-width: $screen-sm) {
+        .wrap-menu {
+          display: none;
+          position: absolute;
+          width: 100%;
+          top: 100%;
+          left: 0;
+          background: rgba(0, 0, 0, 0.9);
+          z-index: 2;
+          border-bottom: 1px solid white;
+          border-top: 1px solid white;
+          .menu-header {
+            li {
+              display: block;
+              text-align: center;
+              padding-left: 0;
+              a{
+                padding: 5px 0;
+              }
+              &:hover {
+                background: rgba(255, 255, 255, 0.5);
+              }
+
+            }
+          }
+        }
+
+        .gamburger {
+          display: block;
+        }
+      }
+    }
+  }
+}

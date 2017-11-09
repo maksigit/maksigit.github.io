@@ -1,0 +1,144 @@
+.banner {
+  position: relative;
+  background: url("../images/image.png") no-repeat fixed center/cover;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 15px;
+    .wrap-product {
+      max-width: 50%;
+
+      h1 {
+        color: $color-primery;
+        text-transform: uppercase;
+      }
+
+      p {
+        font: 16px/1.4 'Raleway', sans-serif;
+        color: $color-primery;
+        padding: 40px 0;
+        position: relative;
+
+        &:before {
+          content: " ";
+          width: 74px;
+          border: 1px solid $color-primery;
+          display: inline-block;
+          position: absolute;
+          top: 0;
+        }
+      }
+
+      .btn {
+        display: inline-block;
+        border: 1px solid $color-primery;
+        transition: .4s;
+        margin: 5px;
+        &.try {
+          border: 1px solid #5ACF42;
+          display: none;
+          background: #5ACF42;
+          font-weight: bold;
+          span {
+            color: $color-secondary;
+          }
+        }
+
+        &:hover {
+          background: $color-secondary;
+          border: 1px solid $color-secondary;
+          span {
+            color: #5ACF42;
+          }
+        }
+      }
+    }
+
+    .wrap-form-header {
+      max-width: 50%;
+      display: flex;
+      position: relative;
+      .form-header {
+        border-radius: 5px;
+        text-align: center;
+        max-width: 360px;
+        margin: auto;
+        background: $color-primery;
+        h2 {
+          margin: 0;
+          padding: 15px 0;
+          background: #f5f5f5;
+          color: $color-title;
+          font: $font-sub-title;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+          font-weight: bold;
+          span {
+            color: $color-secondary;
+          }
+        }
+        input {
+          width: 80%;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          padding: 10px;
+          margin-top: 40px;
+        }
+
+        button {
+          margin-top: 40px;
+          cursor: pointer;
+          padding: 20px 0;
+          width: 100%;
+          border: none;
+          border-bottom-right-radius: 5px;
+          border-bottom-left-radius: 5px;
+          background: $color-secondary;
+          color: $color-primery;
+          transition: 0.4s;
+          &:hover {
+            background: #5ACF42;
+          }
+        }
+      }
+    }
+    @media (max-width: $screen-md) {
+      .wrap-product {
+        max-width: 100%;
+        .btn.try {
+          display: inline-block;
+        }
+      }
+      .wrap-form-header {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        max-width: 100%;
+      }
+    }
+    @media (max-width: $screen-sm) {
+      .wrap-product {
+        text-align: center;
+      }
+      p{
+        &:before {
+          right:43%;
+        }
+      }
+    }
+    @media (max-width: 520px) {
+      .wrap-product {
+        h1 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

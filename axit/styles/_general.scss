@@ -1,0 +1,40 @@
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  li {
+    display: inline-block;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+h1{
+  font: 36px 'Raleway', sans-serif;
+}
+h2 {
+  font: $font-sub-title;
+  color: $color-title;
+  font-weight: bold;
+}
+
+p {
+  font: $font-desc;
+  color: #86878b;
+}
+
+.container {
+  max-width: 1110px;
+  box-sizing: border-box;
+  margin: auto;
+  padding: 105px 15px;
+  position: relative;
+}
+.btn {
+  display: inline-block;
+  padding: 15px 32px;
+  font: 15px 'Open Sans', sans-serif;
+  color: $color-primery;
+}
