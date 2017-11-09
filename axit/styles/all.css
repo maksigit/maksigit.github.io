@@ -274,4 +274,111 @@ p {
       .tab-img .container .wrap-img img {
         padding-top: 20px; } }
 
+.sub-list .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .sub-list .container .wrap-img img {
+    max-width: 100%; }
+  .sub-list .container .wrap-description {
+    max-width: 415px; }
+    .sub-list .container .wrap-description .dash {
+      font: 14px/1.4 'Raleway', sans-serif;
+      color: #86878b;
+      padding: 40px 0;
+      position: relative; }
+      .sub-list .container .wrap-description .dash:before {
+        content: " ";
+        width: 74px;
+        border: 1px solid #ff834b;
+        display: inline-block;
+        position: absolute;
+        top: 0; }
+    .sub-list .container .wrap-description .wrap-cloud {
+      display: flex;
+      justify-content: space-between; }
+      .sub-list .container .wrap-description .wrap-cloud a {
+        color: #ff834b;
+        width: 40px;
+        height: 40px;
+        border: 2px solid #ff834b;
+        border-radius: 33px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .4s; }
+        .sub-list .container .wrap-description .wrap-cloud a:hover {
+          background: #5ACF42;
+          color: #fff;
+          border: 2px solid #5ACF42; }
+      .sub-list .container .wrap-description .wrap-cloud .wrap-cloud-desc {
+        max-width: 334px; }
+        .sub-list .container .wrap-description .wrap-cloud .wrap-cloud-desc h2 {
+          margin: 0;
+          font-size: 12px; }
+    .sub-list .container .wrap-description .wrap-cloud:last-child {
+      padding-top: 30px; }
+@media (max-width: 992px) {
+  .sub-list .container {
+    flex-direction: column; }
+    .sub-list .container .wrap-description {
+      max-width: 100%; }
+      .sub-list .container .wrap-description .wrap-cloud {
+        flex-direction: column;
+        align-items: center; }
+        .sub-list .container .wrap-description .wrap-cloud .wrap-cloud-desc {
+          max-width: 100%; } }
+
+.standart-picture {
+  background: #f5f5f5; }
+  .standart-picture .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .standart-picture .container .wrap-img img {
+      max-width: 100%; }
+    .standart-picture .container .wrap-description {
+      max-width: 415px; }
+      .standart-picture .container .wrap-description .dash {
+        font: 14px/1.4 'Raleway', sans-serif;
+        color: #86878b;
+        padding: 40px 0;
+        position: relative; }
+        .standart-picture .container .wrap-description .dash:before {
+          content: " ";
+          width: 74px;
+          border: 1px solid #ff834b;
+          display: inline-block;
+          position: absolute;
+          top: 0; }
+      .standart-picture .container .wrap-description .wrap-cloud {
+        display: flex;
+        justify-content: space-between; }
+        .standart-picture .container .wrap-description .wrap-cloud a {
+          color: #ff834b;
+          width: 40px;
+          height: 40px;
+          border: 2px solid #ff834b;
+          border-radius: 33px;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+        .standart-picture .container .wrap-description .wrap-cloud .wrap-cloud-desc {
+          max-width: 334px; }
+          .standart-picture .container .wrap-description .wrap-cloud .wrap-cloud-desc h2 {
+            margin: 0;
+            font-size: 12px; }
+      .standart-picture .container .wrap-description .wrap-cloud:last-child {
+        padding-top: 30px; }
+  @media (max-width: 992px) {
+    .standart-picture .container {
+      flex-direction: column; }
+      .standart-picture .container .wrap-description {
+        max-width: 100%; }
+        .standart-picture .container .wrap-description .wrap-cloud {
+          flex-direction: column;
+          align-items: center; }
+          .standart-picture .container .wrap-description .wrap-cloud .wrap-cloud-desc {
+            max-width: 100%; } }
+
 /*# sourceMappingURL=all.css.map */
