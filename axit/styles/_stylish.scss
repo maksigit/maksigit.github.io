@@ -1,0 +1,40 @@
+.stylish {
+  background: url("../images/stylish.png") no-repeat center/cover;
+  .container {
+    text-align: center;
+
+    h2 {
+      color: $color-primery;
+      font: $font-title;
+      font-size: 36px;
+      text-transform: uppercase;
+      margin: 25px 0;
+    }
+
+    .dash {
+      font: 14px/1.4 'Raleway', sans-serif;
+      color: #86878b;
+      padding: 40px 0;
+      position: relative;
+
+      &:before {
+        content: " ";
+        width: 74px;
+        border: 1px solid $color-secondary;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -37px;
+      }
+    }
+    .btn {
+      border: 1px solid $color-primery;
+      transition: .4s;
+      &:hover {
+        background: $color-secondary;
+        border: 1px solid $color-secondary;
+      }
+    }
+  }
+}

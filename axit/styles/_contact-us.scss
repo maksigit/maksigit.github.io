@@ -1,0 +1,99 @@
+.contact-us{
+  .container {
+    text-align: center;
+
+    h2 {
+      font: $font-title;
+      font-size: 36px;
+      text-transform: uppercase;
+      margin: 25px 0;
+    }
+
+    .dash {
+      font: 14px/1.4 'Raleway', sans-serif;
+      color: #86878b;
+      padding: 40px 0;
+      position: relative;
+
+      &:before {
+        content: " ";
+        width: 74px;
+        border: 1px solid $color-secondary;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -37px;
+      }
+    }
+    .form-bottom {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 40px;
+
+      .form-input {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding-right: 30px;
+        input {
+          margin-top: 30px;
+          padding: 10px;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          border-bottom: 2px solid $color-desc;
+        }
+        input:focus {
+          border: 2px solid #00e0d0;
+          outline: none;
+        }
+      }
+
+      .form-texarea {
+        width: 50%;
+        padding-left: 30px;
+        margin-top: 30px;
+        textarea {
+          width: 94%;
+          height: 94%;
+          resize: none;
+          padding: 10px 10px 0 10px;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          border-bottom: 2px solid $color-desc;
+        }
+        textarea:focus {
+          border: 2px solid #00e0d0;
+          outline: none;
+        }
+      }
+    }
+
+    @media (max-width: $screen-sm) {
+      .form-bottom {
+        flex-direction: column;
+        align-items: center;
+        .form-texarea, .form-input {
+          padding: 0;
+          textarea {
+            min-height: 150px;
+          }
+        }
+
+      }
+    }
+    .btn {
+      border: none;
+      color: $color-primery;
+      background: $color-secondary;
+      transition: .4s;
+      cursor: pointer;
+      border-radius: 5px;
+      &:hover {
+        background: #5ACF42;
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.footer {
+  background: #000;
+  .container {
+    padding: 20px 0;
+    text-align: center;
+    .warp-social-icon {
+      //display: flex;
+      //align-items: center;
+
+      ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        li {
+          padding: 0 10px;
+
+          a {
+            display: inline-block;
+
+            .fa {
+              color: #cbcbcb;
+              transition: .4s;
+
+              &:hover {
+                color: $color-secondary;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .copy {
+      font: $font-desc;
+      font-size: 12px;
+      color: $color-primery;
+      padding-top: 15px;
+    }
+  }
+}
+
+#toTop {
+  text-align:center;
+  position:fixed;
+  bottom:10px; /* отступ кнопки от нижнего края страницы*/
+  right:10px;
+  cursor:pointer;
+  display:none;
+  z-index: 9;
+  i{
+    padding: 10px;
+    border-radius: 50px;
+    border:2px solid $color-secondary;
+    color: $color-secondary;
+    transition: .4s;
+    box-shadow: 0 0 10px 0;
+    &:hover{
+      background: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+}

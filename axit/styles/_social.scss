@@ -25,6 +25,7 @@
 
             .fa {
               color: #cbcbcb;
+              transition: .4s;
               &:hover {
                 color: $color-secondary;
               }
