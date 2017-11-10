@@ -176,7 +176,7 @@ p {
           border-bottom-left-radius: 5px;
           background: #ff834b;
           color: #fff;
-          transition: 0.4s; }
+          transition: .2s; }
           .banner .container .wrap-form-header .form-header button:hover {
             background: #5ACF42; }
         .banner .container .wrap-form-header .form-header .close {
@@ -274,6 +274,10 @@ p {
         @media (max-width: 380px) {
           .tab-img .container .wrap-tab .tabs-list .tab {
             padding: 20px 25px; } }
+      @media (max-width: 380px) {
+        .tab-img .container .wrap-tab .tabs-list {
+          display: flex;
+          justify-content: space-between; } }
       .tab-img .container .wrap-tab .tabs-content-list .tab-content {
         display: none; }
         .tab-img .container .wrap-tab .tabs-content-list .tab-content .btn {
@@ -482,7 +486,8 @@ p {
     .prising .container .wrap-item {
       display: flex;
       justify-content: space-between;
-      max-width: 100%; }
+      max-width: 100%;
+      align-items: center; }
       .prising .container .wrap-item .item {
         width: calc(100% / 3);
         padding: 5px 10px;
@@ -494,7 +499,7 @@ p {
           margin: 0;
           padding: 20px 0;
           color: #fff;
-          font: 14px/1.4 "Open Sans", sans-serif;
+          font: 20px "Open Sans", sans-serif;
           font-weight: bold;
           text-transform: none;
           border-bottom: 1px solid #fff;
@@ -504,10 +509,19 @@ p {
           font: 94px 'Raleway', sans-serif;
           font-weight: bold;
           background: #363636; }
+          .prising .container .wrap-item .item .int .baks {
+            font-size: 40px; }
         .prising .container .wrap-item .item .int-desc {
           font: 14px/1.4 "Open Sans", sans-serif;
           font-style: italic;
-          padding-bottom: 20px; }
+          padding-bottom: 20px;
+          background: #363636; }
+        .prising .container .wrap-item .item .popular {
+          font: 14px/1.4 "Open Sans", sans-serif;
+          padding: 14px;
+          background: #ff834b;
+          text-transform: uppercase;
+          font-weight: bold; }
         .prising .container .wrap-item .item .item-list {
           border-top: 4px solid #ff834b;
           background: #fff; }
@@ -524,7 +538,9 @@ p {
       .prising .container .wrap-item {
         flex-direction: column; }
         .prising .container .wrap-item .item {
-          width: 97%; } }
+          width: 97%; }
+        .prising .container .wrap-item .item-list {
+          border-bottom: 4px solid #ff834b; } }
 
 .comments .container {
   text-align: center; }
@@ -658,7 +674,10 @@ p {
         border-right: none;
         border-bottom: 2px solid #86878b; }
       .contact-us .container .form-bottom .form-input input:focus {
-        border: 2px solid #00e0d0;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid #00e0d0;
         outline: none; }
     .contact-us .container .form-bottom .form-texarea {
       width: 50%;
@@ -674,7 +693,10 @@ p {
         border-right: none;
         border-bottom: 2px solid #86878b; }
       .contact-us .container .form-bottom .form-texarea textarea:focus {
-        border: 2px solid #00e0d0;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid #00e0d0;
         outline: none; }
   @media (max-width: 768px) {
     .contact-us .container .form-bottom {
@@ -688,7 +710,7 @@ p {
     border: none;
     color: #fff;
     background: #ff834b;
-    transition: .4s;
+    transition: .2s;
     cursor: pointer;
     border-radius: 5px; }
     .contact-us .container .btn:hover {

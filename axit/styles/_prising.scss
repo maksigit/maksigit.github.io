@@ -32,6 +32,7 @@
       display: flex;
       justify-content: space-between;
       max-width: 100%;
+      align-items: center;
 
       .item {
         width: calc(100% / 3);
@@ -45,7 +46,7 @@
           margin: 0;
           padding: 20px 0;
           color: $color-primery;
-          font: $font-desc;
+          font: $font-sub-title;
           font-weight: bold;
           text-transform: none;
           border-bottom: 1px solid $color-primery;
@@ -57,11 +58,23 @@
           font: 94px 'Raleway', sans-serif;
           font-weight: bold;
           background: #363636;
+          .baks {
+            font-size: 40px;
+          }
         }
         .int-desc {
           font: $font-desc;
           font-style: italic;
           padding-bottom: 20px;
+          background: #363636;
+        }
+
+        .popular {
+          font: $font-desc;
+          padding: 14px;
+          background: $color-secondary;
+          text-transform: uppercase;
+          font-weight: bold;
         }
 
         .item-list {
@@ -83,10 +96,12 @@
     }
     @media (max-width: $screen-sm) {
       .wrap-item {
-
         flex-direction: column;
         .item {
           width: 97%;
+        }
+        .item-list {
+          border-bottom: 4px solid #ff834b;
         }
       }
     }

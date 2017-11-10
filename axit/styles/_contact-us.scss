@@ -45,7 +45,10 @@
           border-bottom: 2px solid $color-desc;
         }
         input:focus {
-          border: 2px solid #00e0d0;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          border-bottom: 2px solid #00e0d0;
           outline: none;
         }
       }
@@ -65,7 +68,10 @@
           border-bottom: 2px solid $color-desc;
         }
         textarea:focus {
-          border: 2px solid #00e0d0;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          border-bottom: 2px solid #00e0d0;
           outline: none;
         }
       }
@@ -88,7 +94,7 @@
       border: none;
       color: $color-primery;
       background: $color-secondary;
-      transition: .4s;
+      transition: .2s;
       cursor: pointer;
       border-radius: 5px;
       &:hover {
