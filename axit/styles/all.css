@@ -703,7 +703,8 @@ p {
       flex-direction: column;
       align-items: center; }
       .contact-us .container .form-bottom .form-texarea, .contact-us .container .form-bottom .form-input {
-        padding: 0; }
+        padding: 0;
+        width: 70%; }
         .contact-us .container .form-bottom .form-texarea textarea, .contact-us .container .form-bottom .form-input textarea {
           min-height: 150px; } }
   .contact-us .container .btn {
