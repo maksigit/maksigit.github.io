@@ -108,14 +108,16 @@
           }
         }
         .close {
+          display: none;
           cursor: pointer;
-          display: inline;
+          //display: inline;
           position: absolute;
           top: 0;
           right: 0;
           &:hover {
             color: $color-secondary;
           }
+
         }
       }
     }
@@ -144,6 +146,9 @@
           opacity: 1;
           display: flex;
           align-items: center;
+        }
+        .close{
+          display: block !important;
         }
       }
     }

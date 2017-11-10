@@ -180,8 +180,8 @@ p {
           .banner .container .wrap-form-header .form-header button:hover {
             background: #5ACF42; }
         .banner .container .wrap-form-header .form-header .close {
+          display: none;
           cursor: pointer;
-          display: inline;
           position: absolute;
           top: 0;
           right: 0; }
@@ -207,7 +207,9 @@ p {
           transition: .4s;
           opacity: 1;
           display: flex;
-          align-items: center; } }
+          align-items: center; }
+        .banner .container .wrap-form-header .close {
+          display: block !important; } }
     @media (max-width: 768px) {
       .banner .container .wrap-product {
         text-align: center; }
