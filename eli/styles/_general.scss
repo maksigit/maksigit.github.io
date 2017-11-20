@@ -1,0 +1,29 @@
+.container {
+  max-width: 1170px;
+  box-sizing: border-box;
+  margin: auto;
+  position: relative;
+}
+
+.string {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  li {
+    display: inline-block;
+  }
+}
+
+.space-beetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  transition: 0.4s;
+  &:hover {
+    color: #fff;
+  }
+}
