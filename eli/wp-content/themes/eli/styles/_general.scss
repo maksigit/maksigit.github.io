@@ -1,0 +1,24 @@
+.container {
+  max-width: 1170px;
+  box-sizing: border-box;
+  margin: auto;
+  //padding: 0 15px;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.space-beetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    display: inline-block;
+  }
+}

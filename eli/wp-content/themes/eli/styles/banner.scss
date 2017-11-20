@@ -1,0 +1,37 @@
+.wrap-banner {
+  background-image: url(../images/rectangle-2-copy.png);
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    max-width: 1200px;
+    .text-banner {
+      font-family: 'Halant', serif;
+      font-size: 48px;
+      color: #ffffff;
+    }
+    @media (max-width: 910px) {
+      .text-banner {
+        font-size: 34px;
+      }
+    }
+    @media (max-width: 810px) {
+      .text-banner {
+        font-size: 24px;
+      }
+    }
+    .img-girl {
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+.banner-find {
+  padding: 30px;
+  background-image: url(../images/rectangle-3.png);
+}

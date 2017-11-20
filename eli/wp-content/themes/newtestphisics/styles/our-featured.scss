@@ -1,0 +1,50 @@
+.container-our-featured {
+  padding: 50px 0;
+  margin: auto;
+  max-width: 1200px;
+  background-color: #f2f2f5;
+  .title {
+    text-align: center;
+    font-family: 'Halant', serif;
+    font-size: 30px;
+    color: #333333;
+  }
+  .subtitle{
+    padding: 20px 0 35px;
+    text-align: center;
+    font-family: 'Halant', serif;
+    font-size: 20px;
+    color: #666666;
+  }
+  .wrap-posts {
+    display: flex;
+    justify-content: space-between;
+    .item {
+      padding: 0 5px;
+      .item-title{
+        background-color: #666699;
+        font-family: 'Halant', serif;
+        font-size: 20px;
+        text-align: center;
+        color: white;
+        a{
+          text-decoration: none;
+        }
+      }
+    }
+
+    .item-img {
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+  @media (max-width: 700px) {
+    .wrap-posts {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+  }
+}

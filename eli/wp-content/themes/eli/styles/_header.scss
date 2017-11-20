@@ -1,0 +1,139 @@
+.main-header {
+  .container {
+    text-align: center;
+
+    .custom-logo-link {
+      padding: 40px 0;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        padding: 15px;
+        box-sizing: border-box;
+        transition: .4s;
+
+        &:hover {
+          box-shadow: 0 0 15px #000;
+        }
+      }
+    }
+  }
+  .wrap-menu {
+    position: relative;
+    background-image: linear-gradient(to top, #d4b279 0%, #e5c381 51%, #d2b279 100%);
+
+    .container {
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+
+      .gamburger {
+        display: none;
+        cursor: pointer;
+        &:hover {
+          color: white;
+        }
+      }
+      .menu-header-menu-container {
+        transition: .4s;
+        ul {
+          li {
+            padding: 0 15px;
+
+            a {
+              font: 16px $font-main;
+              color: $color-menu;
+              transition: .4s;
+              &:hover {
+                color: white;
+              }
+            }
+          }
+        }
+      }
+
+      .wrap-phone-login {
+        width: 310px;
+        align-items: center;
+
+        .phone {
+          a {
+            font: 18px $font-main;
+            color: $color-menu;
+            transition: .4s;
+            &:hover {
+              color: white;
+            }
+            i {
+              padding-right: 6px;
+            }
+            @media (max-width: 500px) {
+              font-size: 14px;
+              padding-left: 10px;
+            }
+          }
+        }
+
+        .wrap-login {
+          a {
+            font: 16px $font-main;
+            color: $color-menu;
+            text-decoration: underline;
+            transition: .4s;
+            &:hover {
+              color: white;
+            }
+
+            @media (max-width: 500px) {
+              font-size: 14px;
+            }
+          }
+
+          .register {
+            padding-right: 6px;
+            border-right: 1px solid $color-menu;
+          }
+
+          .login-in {
+            padding-left: 6px;
+          }
+        }
+      }
+
+      @media (max-width: $media-lg) {
+        .gamburger {
+          display: block;
+        }
+        .menu-header-menu-container {
+          width: 100%;
+          position: absolute;
+          top: 100%;
+          left: -100%;
+          background: rgba(0, 0, 0, 1);
+          z-index: 2;
+
+          ul {
+            li {
+              display: block;
+              padding: 5px;
+
+              a{
+                display: block;
+                color: #d6b67a;
+                font-weight: bold;
+                border-bottom: 1px solid #333;
+
+                &:hover {
+                  background: rgba(255, 255, 255, .5);
+                }
+              }
+            }
+          }
+        }
+        .to-right {
+          left: 0;
+        }
+      }
+    }
+  }
+}

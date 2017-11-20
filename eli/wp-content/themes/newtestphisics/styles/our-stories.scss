@@ -1,0 +1,42 @@
+.container-our-stories {
+  padding: 50px 0;
+  margin: auto;
+  max-width: 1200px;
+  .title {
+    text-align: center;
+    font-family: 'Halant', serif;
+    font-size: 30px;
+    color: #333333;
+  }
+  .subtitle {
+    padding: 20px 0 35px;
+    text-align: center;
+    font-family: 'Halant', serif;
+    font-size: 20px;
+    color: #666666;
+  }
+  .wrap-posts {
+    display: flex;
+    justify-content: space-between;
+    .item {
+      padding: 0 5px;
+    }
+    .item-img {
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+  //@media (max-width: 700px) {
+  //  .wrap-posts {
+  //    display: flex;
+  //    flex-flow: row wrap;
+  //  }
+  //}
+  .img-company {
+    margin-top: 50px;
+    text-align: center;
+
+  }
+}

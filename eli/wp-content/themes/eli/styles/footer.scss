@@ -1,0 +1,130 @@
+.main-footer {
+  background: #39332c;
+
+  .footer-top {
+    position: relative;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      padding: 35px 15px;
+
+      .widget-area {
+        max-width: 200px;
+        .widgettitle {
+          font: 16px $font-main;
+          color: #f1cd85;
+          text-transform: uppercase;
+          position: relative;
+
+          &:after {
+            content: ' ';
+            width: 52px;
+            border: 1px solid #f1cd85;
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+          }
+        }
+
+        .menu {
+          padding-top: 20px;
+          li {
+            display: block;
+            a {
+              padding: 3px 0;
+              color: #fff;
+              font: 14px $font-main;
+              transition: .4s;
+
+              &:hover {
+                color: #f1cd85;
+              }
+            }
+          }
+        }
+      }
+      .contact-us {
+        padding-top: 20px;
+        li {
+          display: block;
+
+          a {
+            display: flex;
+            align-items: center;
+            padding: 3px 0;
+            color: #fff;
+            font: 14px $font-main;
+            transition: .4s;
+
+            i {
+              min-width: 25px;
+              padding-right: 10px;
+              font-size: 20px;
+
+            }
+            &:hover {
+              color: #f1cd85;
+            }
+          }
+        }
+      }
+      @media (max-width: 600px) {
+        flex-direction: column;
+
+        .widget-area {
+          margin: auto;
+          border-bottom: 1px solid #f1cd85;
+        }
+      }
+    }
+    &:after {
+      content: '';
+      width: 100%;
+      border: 1px solid #fff;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  .footer-bottom {
+    .container {
+      padding: 15px;
+      display: flex;
+      justify-content: flex-end;
+
+      ul {
+        li {
+          display: inline-block;
+          a {
+            color: #fff;
+            font: 12px $font-main;
+            padding-right: 5px;
+            transition: .4s;
+
+            &:hover {
+              color: #f1cd85;
+            }
+          }
+        }
+        li:first-child {
+          border-right: 1px solid #fff;
+        }
+      }
+      .privacy {
+        padding-right: 220px;
+        @media(max-width: 710px) {
+          padding-right: 30px;
+        }
+      }
+      @media(max-width: 600px) {
+        flex-direction: column;
+        text-align: center;
+
+        .privacy {
+          margin-bottom: 10px;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}

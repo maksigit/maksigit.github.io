@@ -1,0 +1,51 @@
+.container-trening {
+  padding: 50px 0;
+  margin: auto;
+  max-width: 1200px;
+  .title {
+    text-align: center;
+    font-family: 'Halant', serif;
+    font-size: 30px;
+    color: #333333;
+  }
+  .subtitle {
+    padding: 20px 0 35px;
+    text-align: center;
+    font-family: 'Halant', serif;
+    font-size: 20px;
+    color: #666666;
+  }
+  .wrap-posts {
+    display: flex;
+    justify-content: space-between;
+    .item {
+      margin: 0 5px;
+      .item-title {
+        background-color: #ecc275;
+        font-family: 'Halant', serif;
+        font-size: 20px;
+        text-align: center;
+        a {
+          text-decoration: none;
+        }
+      }
+      .item-img {
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+  @media (min-width: 320px) and (max-width: 630px) {
+    .wrap-posts{
+      display: flex;
+      flex-flow: row wrap;
+      .item{
+        margin: 0 auto;
+        padding-top: 10px;
+      }
+    }
+  }
+
+}
