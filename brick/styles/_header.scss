@@ -104,6 +104,7 @@
             li {
               text-align: center;
               display: block;
+              padding: 0;
 
               &:hover {
                 background: $color-main;
@@ -146,9 +147,11 @@
       text-decoration: none;
 
       &:hover {
-        //color: $color-main;
         background: #ff834b;
         border: 1px solid #ff834b;
+      }
+      @media (max-width: 450px) {
+        font-size: 24px;
       }
     }
 

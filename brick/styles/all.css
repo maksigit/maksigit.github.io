@@ -94,7 +94,8 @@
         z-index: 9; }
         .main-header .container-header-top .main-nav ul li {
           text-align: center;
-          display: block; }
+          display: block;
+          padding: 0; }
           .main-header .container-header-top .main-nav ul li:hover {
             background: #00e0d0; }
           .main-header .container-header-top .main-nav ul li a {
@@ -123,6 +124,9 @@
       .main-header .container-header-bottom .phone:hover {
         background: #ff834b;
         border: 1px solid #ff834b; }
+      @media (max-width: 450px) {
+        .main-header .container-header-bottom .phone {
+          font-size: 24px; } }
     .main-header .container-header-bottom .owl-carousel div {
       text-align: center; }
       .main-header .container-header-bottom .owl-carousel div h1 {
