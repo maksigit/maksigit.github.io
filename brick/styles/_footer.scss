@@ -1,0 +1,272 @@
+footer {
+  background: url(../images/brick-258938_1920.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+
+  .container-footer {
+    max-width: 940px;
+    margin: auto;
+    padding: 70px 10px;
+    position: relative;
+    z-index: 1;
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      .first {
+        max-width: 283px;
+
+        .wrap-logo {
+          transition: .45s;
+          text-decoration: none;
+          color: #ff834b;
+          font: 28px 'Playfair Display', serif;
+          padding: 0 5px;
+          font-weight: bold;
+
+          &:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 5px #000;
+          }
+        }
+
+        .text {
+          font: 14px/1.9 'Roboto', sans-serif;
+          padding: 26px 0 11px;
+          color: white;
+        }
+      }
+      .second {
+        max-width: 263px;
+        padding-top: 20px;
+        .title {
+          font-size: 14px;
+          font-family: 'Roboto', sans-serif;
+          padding-bottom: 42px;
+          color: white;
+        }
+        .wrap-img-title {
+          display: flex;
+          justify-content: space-between;
+          i {
+            padding-right: 16px;
+            color: white;
+          }
+          .text {
+            font: 14px/1.9 'Roboto', sans-serif;
+            padding-bottom: 27px;
+            color: white;
+            text-align: left;
+          }
+        }
+        .wrap-img-title-second {
+          i {
+            padding-right: 16px;
+            color: white;
+          }
+          .text {
+            display: inline-block;
+            font: 14px/1.9 'Roboto', sans-serif;
+            padding-bottom: 27px;
+            color: white;
+            text-align: left;
+          }
+        }
+      }
+      .third {
+        max-width: 294px;
+        padding-top: 20px;
+
+        .title {
+          font-size: 14px;
+          font-family: 'Roboto', sans-serif;
+          padding-bottom: 42px;
+          color: white;
+        }
+        form {
+          display: flex;
+          justify-content: space-between;
+          input {
+            padding: 18px 0 18px 18px;
+            background: transparent;
+          }
+          input:focus {
+            border: 2px solid $color-main;
+            outline: none;
+          }
+          button {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.3);
+            transition: .4s;
+            padding: 0 23px;
+            i {
+              color: white;
+            }
+
+            &:hover {
+              background: $color-main;
+              color: white;
+              cursor: pointer;
+            }
+          }
+        }
+        .wrap-icon {
+          display: flex;
+          padding-top: 24px;
+          a {
+            text-decoration: none;
+            display: flex;
+            justify-content: space-between;
+            padding-right: 5px;
+            border-radius: 20px;
+
+            .icon {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 38px;
+              height: 38px;
+              border: 1px solid white;
+              border-radius: 20px;
+              transition: .4s;
+              i {
+                color: white;
+              }
+              &:hover {
+                background: $color-main;
+                border: 1px solid $color-main;
+              }
+            }
+
+          }
+        }
+      }
+    }
+    @media (max-width: 860px) {
+      .footer-top {
+        display: flex;
+        flex-flow: row wrap;
+      }
+      .first, .second, .third {
+        margin: auto;
+      }
+      .first, .second {
+        border-bottom: 1px solid white;
+      }
+      .third, .second {
+        padding-top: 40px !important;
+      }
+    }
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 71px;
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          display: inline-block;
+          padding-right: 20px;
+          a {
+            text-decoration: none;
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            transition: .4s;
+
+            &:hover {
+              color: $color-main;
+            }
+          }
+        }
+      }
+      .copy {
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+      }
+    }
+    @media (max-width: 550px) {
+      .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .copy {
+        padding-top: 20px;
+      }
+    }
+  }
+
+  &:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    content: "";
+    background: rgba(56, 33, 75, 0.86);
+  }
+}
+
+.wrap-pop-up {
+  display: none;
+  .container-pop-up {
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: fixed;
+    background: rgba(31, 31, 31, 0.86);
+    display: flex;
+    .pop-up {
+      padding: 15px;
+      margin: auto;
+      position: relative;
+      .close {
+        text-align: right;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        i {
+          cursor: pointer;
+          color: white;
+          &:hover {
+            color: $color-main;
+          }
+        }
+      }
+      .video {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+      }
+    }
+  }
+}
+
+#toTop {
+  text-align: center;
+  position: fixed;
+  bottom: 10px; /* отступ кнопки от нижнего края страницы*/
+  right: 10px;
+  cursor: pointer;
+  display: none;
+  z-index: 9;
+  i {
+    padding: 10px;
+    border-radius: 50px;
+    border: 2px solid $color-main;
+    color: $color-main;
+    transition: .4s;
+    box-shadow: 0 0 10px 0;
+    &:hover {
+      background: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+}
+
+
