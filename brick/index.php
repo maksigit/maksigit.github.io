@@ -1,8 +1,43 @@
+<?php
+if (isset($_POST["send"])) {
+    var_dump($_POST);
+
+    $from = htmlspecialchars($_POST["from"]);
+    $email = htmlspecialchars($_POST["email"]);
+    $mes = htmlspecialchars($_POST["mes"]);
+
+    $_SESSION["from"] = $from;
+    $_SESSION["email"] = $email;
+    $_SESSION["mes"] = $mes;
+
+    $error_from = "";
+    $error_email = "";
+    $error_mes = "";
+    $error = false;
+    if ($from == "") {
+        $error_from = "Введите имя";
+        $error = true;
+    }
+    if ($email == "") {
+        $error_email = "Введите Email";
+        $error = true;
+    }
+    if (strlen($mes) == 0) {
+        $error_mes = "Введите Сообщение";
+        $error = true;
+    }
+    if(!$error) {
+        mail("maksi123@i.ua", $from, $email, $mes);
+        //exit;
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tajem</title>
+    <title>Brick City</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Playfair+Display|Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
@@ -15,71 +50,32 @@
 <body>
 <header class="main-header">
     <div class="container-header-top">
-        <a href="#" class="wrap-logo">
-            Brick City
-        </a>
+        <a href="#" class="wrap-logo"> Brick City </a>
         <nav class="main-nav">
             <ul>
                 <li><a href="#home" class="active-top">ГЛАВНАЯ</a></li>
                 <li><a href="#about">О НАС</a></li>
                 <li><a href="#expertise">ПРЕИМУЩЕСТВА</a></li>
-                <!--<li><a href="#team">ГАЗОБЕТОН</a></li>-->
                 <li><a href="#work">ГАЗОБЕТОН</a></li>
-                <!--<li><a href="#jane"></a></li>-->
                 <li><a href="#contact">КОНТАКТЫ</a></li>
             </ul>
         </nav>
         <div class="gamberger"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div>
     </div>
     <div class="container-header-bottom" id="home">
-        <div class="owl-carousel owl-carousel-top">
-            <div>
-                <h1>We Are Awesome Creative Agency</h1>
-                <div class="dash"></div>
-                <div class="text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
-                    aliquet. Aenean
-                    sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-                    Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
-                </div>
-
-                <a href="tel:+38055 555 55 55" class="phone">
-                    <i class="fa fa-phone" aria-hidden="true"></i>
-                    +38055 555 55 55
-                </a>
+        <div>
+            <h1>We Are Awesome Creative Agency</h1>
+            <div class="dash"></div>
+            <div class="text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
+                aliquet. Aenean
+                sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
             </div>
 
-            <div>
-                <h1>We Are Awesome Creative Agency 2</h1>
-                <div class="dash"></div>
-                <div class="text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
-                    aliquet. Aenean
-                    sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-                    Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
-                </div>
-                <a class="btn btn-default" href="#">Learn more</a>
-            </div>
-
-            <div>
-                <h1>We Are Awesome Creative Agency 3</h1>
-                <div class="dash"></div>
-                <div class="text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
-                    aliquet. Aenean
-                    sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-                    Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
-                </div>
-                <a class="btn btn-default" href="#">Learn more</a>
-            </div>
-
-            <div>
-                <h1>We Are Awesome Creative Agency 4</h1>
-                <div class="dash"></div>
-                <div class="text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
-                    aliquet. Aenean
-                    sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-                    Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
-                </div>
-                <a class="btn btn-default" href="#">Learn more</a>
-            </div>
+            <a href="tel:+38055 555 55 55" class="phone">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                +38055 555 55 55
+            </a>
         </div>
     </div>
 
@@ -174,7 +170,7 @@
         </div>
     </div>
     <div class="wrap-works" id="work">
-        <div class="title">ГАЗОБЕТОН <span class="aeroc">AEROC</span> </div>
+        <div class="title">ГАЗОБЕТОН <span class="aeroc">AEROC</span></div>
         <div class="dash"></div>
     </div>
     <div class="wrap-more-img">
@@ -291,8 +287,8 @@
             <div class="owl-carousel owl-carousel-bottom">
                 <div class="item">
                     <div class="wrap-img"><img
-                            src="images/Screenshot_2017-11-22-16-29-121.jpeg"
-                            alt=""></div>
+                                src="images/Screenshot_2017-11-22-16-29-121.jpeg"
+                                alt=""></div>
                     <div class="text-2">JANE GALADRIEL</div>
                     <div class="text-3">CEO TENGKUREP</div>
                     <div class="text">
@@ -309,8 +305,8 @@
                 </div>
                 <div class="item">
                     <div class="wrap-img"><img
-                            src="https://s3-media2.fl.yelpcdn.com/bphoto/R6hI5GEKN_FucwkTZl0wbA/ls.jpg"
-                            alt=""></div>
+                                src="https://s3-media2.fl.yelpcdn.com/bphoto/R6hI5GEKN_FucwkTZl0wbA/ls.jpg"
+                                alt=""></div>
                     <div class="text-2">JANE GALADRIEL</div>
                     <div class="text-3">CEO TENGKUREP</div>
                     <div class="text">
@@ -327,8 +323,8 @@
                 </div>
                 <div class="item">
                     <div class="wrap-img"><img
-                            src="https://img.elephantjournal.com/wp-content/uploads/2017/06/layla-el-khadri.jpg"
-                            alt=""></div>
+                                src="https://img.elephantjournal.com/wp-content/uploads/2017/06/layla-el-khadri.jpg"
+                                alt=""></div>
                     <div class="text-2">JANE GALADRIEL</div>
                     <div class="text-3">CEO TENGKUREP</div>
                     <div class="text">
@@ -345,8 +341,8 @@
                 </div>
                 <div class="item">
                     <div class="wrap-img"><img
-                            src="https://emergingwomen.com/wp-content/themes/ew/assets/img/page-about/presenter_chantal_pierrat.jpg"
-                            alt=""></div>
+                                src="https://emergingwomen.com/wp-content/themes/ew/assets/img/page-about/presenter_chantal_pierrat.jpg"
+                                alt=""></div>
                     <div class="text-2">JANE GALADRIEL</div>
                     <div class="text-3">CEO TENGKUREP</div>
                     <div class="text">
@@ -368,10 +364,14 @@
         <div class="pre-form">
             <div class="title">ПРЕДЛОЖЕНИЯ И ПОЖЕЛАНИЯ</div>
             <form action="" method="post">
-                <input type="text" placeholder="Имя">
-                <input type="email" placeholder="Email">
-                <textarea rows="10" cols="45" placeholder="Пишите нам :)"></textarea>
-                <div class="button"><a class="btn btn-default" href="#">Отправить</a></div>
+                <input type="text" name="from" value="<?php echo $_SESSION["from"] ?>" placeholder="Имя">
+                <span><?php echo $error_from ?></span>
+                <input type="email" name="email" value="<?php echo $_SESSION["email"] ?>" placeholder="Email">
+                <span><?php echo $error_email ?></span>
+                <textarea rows="10" cols="45" name="mes"
+                          placeholder="Пишите нам :)"><?php echo $_SESSION["mes"] ?></textarea>
+                <span><?php echo $error_mes ?></span>
+                <button class="btn btn-default" type="submit" name="send">Отправить</button>
             </form>
         </div>
     </div>

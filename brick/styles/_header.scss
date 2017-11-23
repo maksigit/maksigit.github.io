@@ -133,29 +133,28 @@
     max-width: 940px;
     width: 100%;
     margin: auto;
+    z-index: 5;
 
     .phone {
       font:40px 'Open Sans', sans-serif;
       color: #fff;
       font-weight: bold;
-      background: $color-main;
+      background: #ff834b;
       display: inline-block;
       padding: 15px 20px;
-      border: 2px solid #fff;
       border-radius: 68px;
       cursor: pointer;
       text-decoration: none;
 
       &:hover {
-        background: #ff834b;
-        border: 1px solid #ff834b;
+        box-shadow: 0 0 200px #000;
       }
       @media (max-width: 450px) {
         font-size: 24px;
       }
     }
 
-    .owl-carousel {
+    //.owl-carousel {
       div {
         text-align: center;
 
@@ -200,7 +199,7 @@
           background: $color-main;
         }
       }
-    }
+    //}
   }
 
   &:after {
