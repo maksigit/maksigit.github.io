@@ -1,37 +1,37 @@
-<?php
-if (isset($_POST["send"])) {
-    var_dump($_POST);
+<!--<?php-->
+<!--if (isset($_POST["send"])) {-->
+    <!--var_dump($_POST);-->
 
-    $from = htmlspecialchars($_POST["from"]);
-    $email = htmlspecialchars($_POST["email"]);
-    $mes = htmlspecialchars($_POST["mes"]);
+    <!--$from = htmlspecialchars($_POST["from"]);-->
+    <!--$email = htmlspecialchars($_POST["email"]);-->
+    <!--$mes = htmlspecialchars($_POST["mes"]);-->
 
-    $_SESSION["from"] = $from;
-    $_SESSION["email"] = $email;
-    $_SESSION["mes"] = $mes;
+    <!--$_SESSION["from"] = $from;-->
+    <!--$_SESSION["email"] = $email;-->
+    <!--$_SESSION["mes"] = $mes;-->
 
-    $error_from = "";
-    $error_email = "";
-    $error_mes = "";
-    $error = false;
-    if ($from == "") {
-        $error_from = "Введите имя";
-        $error = true;
-    }
-    if ($email == "") {
-        $error_email = "Введите Email";
-        $error = true;
-    }
-    if (strlen($mes) == 0) {
-        $error_mes = "Введите Сообщение";
-        $error = true;
-    }
-    if(!$error) {
-        mail("maksi123@i.ua", $from, $email, $mes);
-        //exit;
-    }
-}
-?>
+    <!--$error_from = "";-->
+    <!--$error_email = "";-->
+    <!--$error_mes = "";-->
+    <!--$error = false;-->
+    <!--if ($from == "") {-->
+        <!--$error_from = "Введите имя";-->
+        <!--$error = true;-->
+    <!--}-->
+    <!--if ($email == "") {-->
+        <!--$error_email = "Введите Email";-->
+        <!--$error = true;-->
+    <!--}-->
+    <!--if (strlen($mes) == 0) {-->
+        <!--$error_mes = "Введите Сообщение";-->
+        <!--$error = true;-->
+    <!--}-->
+    <!--if(!$error) {-->
+        <!--mail("maksi123@i.ua", $from, $email, $mes);-->
+        <!--//exit;-->
+    <!--}-->
+<!--}-->
+<!--?>-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -364,12 +364,12 @@ if (isset($_POST["send"])) {
         <div class="pre-form">
             <div class="title">ПРЕДЛОЖЕНИЯ И ПОЖЕЛАНИЯ</div>
             <form action="" method="post">
-                <input type="text" name="from" value="<?php echo $_SESSION["from"] ?>" placeholder="Имя">
+                <input type="text" name="from"  placeholder="Имя"> <!--value="<?php echo $_SESSION["from"] ?>"-->
                 <span><?php echo $error_from ?></span>
-                <input type="email" name="email" value="<?php echo $_SESSION["email"] ?>" placeholder="Email">
+                <input type="email" name="email"  placeholder="Email"> <!--value="<?php echo $_SESSION["email"] ?>" -->
                 <span><?php echo $error_email ?></span>
                 <textarea rows="10" cols="45" name="mes"
-                          placeholder="Пишите нам :)"><?php echo $_SESSION["mes"] ?></textarea>
+                          placeholder="Пишите нам :)"></textarea> <!-- <?php echo $_SESSION["mes"] ?> -->
                 <span><?php echo $error_mes ?></span>
                 <button class="btn btn-default" type="submit" name="send">Отправить</button>
             </form>
