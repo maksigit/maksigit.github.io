@@ -106,11 +106,10 @@
       .main-header .container-header-top .gamberger {
         display: block; } }
   .main-header .container-header-bottom {
-    padding: 150px 0 70px;
     max-width: 940px;
     width: 100%;
     margin: auto;
-    z-index: 5; }
+    z-index: 1; }
     .main-header .container-header-bottom .phone {
       font: 40px 'Open Sans', sans-serif;
       color: #fff;
@@ -482,7 +481,7 @@ footer {
           font-weight: bold; }
           footer .container-footer .footer-top .first .wrap-logo:hover {
             transform: scale(1.1);
-            box-shadow: 0 0 5px #000; }
+            box-shadow: 0 0 50px #00e0d0; }
         footer .container-footer .footer-top .first .text {
           font: 14px/1.9 'Roboto', sans-serif;
           padding: 26px 0 11px;
