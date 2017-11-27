@@ -1,37 +1,41 @@
-<!--<?php-->
-<!--if (isset($_POST["send"])) {-->
-    <!--var_dump($_POST);-->
+<?php
+if (isset($_POST["send"])) {
+    //var_dump($_POST);
 
-    <!--$from = htmlspecialchars($_POST["from"]);-->
-    <!--$email = htmlspecialchars($_POST["email"]);-->
-    <!--$mes = htmlspecialchars($_POST["mes"]);-->
+    $from = htmlspecialchars($_POST["from"]);
+    $email = htmlspecialchars($_POST["email"]);
+    $mes = htmlspecialchars($_POST["mes"]);
 
-    <!--$_SESSION["from"] = $from;-->
-    <!--$_SESSION["email"] = $email;-->
-    <!--$_SESSION["mes"] = $mes;-->
+    $_SESSION["from"] = $from;
+    $_SESSION["email"] = $email;
+    $_SESSION["mes"] = $mes;
 
-    <!--$error_from = "";-->
-    <!--$error_email = "";-->
-    <!--$error_mes = "";-->
-    <!--$error = false;-->
-    <!--if ($from == "") {-->
-        <!--$error_from = "Введите имя";-->
-        <!--$error = true;-->
-    <!--}-->
-    <!--if ($email == "") {-->
-        <!--$error_email = "Введите Email";-->
-        <!--$error = true;-->
-    <!--}-->
-    <!--if (strlen($mes) == 0) {-->
-        <!--$error_mes = "Введите Сообщение";-->
-        <!--$error = true;-->
-    <!--}-->
-    <!--if(!$error) {-->
-        <!--mail("maksi123@i.ua","",$mes, $from, $email, );-->
-        <!--//exit;-->
-    <!--}-->
-<!--}-->
-<!--?>-->
+    $error_from = "";
+    $error_email = "";
+    $error_mes = "";
+    $error = false;
+    if ($from == "") {
+        $error_from = "Введите имя";
+        $error = true;
+    }
+    if ($email == "") {
+        $error_email = "Введите Email";
+        $error = true;
+    }
+    if (strlen($mes) == 0) {
+        $error_mes = "Введите Сообщение";
+        $error = true;
+    }
+    if (!$error) {
+        $headers = "From: $email" . "\r\n";
+        $message = "Name: $from" . "\r\n" . "message: $mes";
+        mail("maksi123p@gmail.com", "hi)", $mes, $headers);
+
+        //exit;
+    }
+    header('location: mail.php');
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -287,7 +291,7 @@
             <div class="owl-carousel owl-carousel-bottom">
                 <div class="item">
                     <div class="wrap-img"><img
-                                src="images/Screenshot_2017-11-22-16-29-121.jpeg"
+                                src="https://img.elephantjournal.com/wp-content/uploads/2017/06/layla-el-khadri.jpg"
                                 alt=""></div>
                     <div class="text-2">JANE GALADRIEL</div>
                     <div class="text-3">CEO TENGKUREP</div>
@@ -364,12 +368,12 @@
         <div class="pre-form">
             <div class="title">ПРЕДЛОЖЕНИЯ И ПОЖЕЛАНИЯ</div>
             <form action="" method="post">
-                <input type="text" name="from"  placeholder="Имя"> <!--value="<?php echo $_SESSION["from"] ?>"-->
+                <input type="text" name="from" placeholder="Имя">
                 <span><?php echo $error_from ?></span>
-                <input type="email" name="email"  placeholder="Email"> <!--value="<?php echo $_SESSION["email"] ?>" -->
+                <input type="email" name="email" placeholder="Email">
                 <span><?php echo $error_email ?></span>
                 <textarea rows="10" cols="45" name="mes"
-                          placeholder="Пишите нам :)"></textarea> <!-- <?php echo $_SESSION["mes"] ?> -->
+                          placeholder="Пишите нам :)"></textarea>
                 <span><?php echo $error_mes ?></span>
                 <button class="btn btn-default" type="submit" name="send">Отправить</button>
             </form>
