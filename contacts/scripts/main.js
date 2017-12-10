@@ -8,7 +8,7 @@ $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
     dots: false,
-    navText: ["<", ">"],
+    navText: ["&larr;", "&rarr;"],
     responsiveClass: true,
     responsive: {
         0: {
