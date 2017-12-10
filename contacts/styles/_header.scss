@@ -48,6 +48,7 @@
       justify-content: center;
       text-decoration: none;
       text-transform: uppercase;
+      transition: .4s;
 
       &:hover {
         color: #303b73;
@@ -58,9 +59,12 @@
 
     .mobile-menu {
       display: none;
+      cursor: pointer;
 
       .fa-bars {
         color: #fff;
+        transition: .4s;
+
         &:hover {
           color: #000;
         }
@@ -80,9 +84,16 @@
           display: block;
 
           a {
+            text-decoration: none;
             display: block;
             padding: 10px 0;
             text-align: center;
+            transition: .4s;
+
+            &:hover {
+              background: #fff;
+              color: #303b73;
+            }
           }
         }
       }

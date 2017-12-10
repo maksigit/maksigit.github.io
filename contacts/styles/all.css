@@ -11,7 +11,8 @@ ul {
 
 .logo {
   padding: 5px;
-  display: inline-block; }
+  display: inline-block;
+  transition: .4s; }
   .logo:hover {
     box-shadow: 0 0 5px #fff; }
 
@@ -51,15 +52,18 @@ ul {
       align-items: center;
       justify-content: center;
       text-decoration: none;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      transition: .4s; }
       .wrap-header .container-main .translate:hover {
         color: #303b73;
         border: 1px solid #303b73;
         background: #fff; }
     .wrap-header .container-main .mobile-menu {
-      display: none; }
+      display: none;
+      cursor: pointer; }
       .wrap-header .container-main .mobile-menu .fa-bars {
-        color: #fff; }
+        color: #fff;
+        transition: .4s; }
         .wrap-header .container-main .mobile-menu .fa-bars:hover {
           color: #000; }
     @media (max-width: 1290px) {
@@ -74,9 +78,14 @@ ul {
         .wrap-header .container-main .wrap-menu li {
           display: block; }
           .wrap-header .container-main .wrap-menu li a {
+            text-decoration: none;
             display: block;
             padding: 10px 0;
-            text-align: center; }
+            text-align: center;
+            transition: .4s; }
+            .wrap-header .container-main .wrap-menu li a:hover {
+              background: #fff;
+              color: #303b73; }
       .wrap-header .container-main .mobile-menu {
         display: block; } }
     @media (max-width: 490px) {
