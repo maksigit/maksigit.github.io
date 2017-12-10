@@ -1,0 +1,31 @@
+.banner {
+  background: url("../images/dsc08196.png") no-repeat fixed center/cover;
+  min-height: 438px;
+  display: flex;
+  align-items: center;
+
+  .container-main {
+    width: 100%;
+    padding: 0 15px;
+
+    h1 {
+      color: #fff;
+      font: 60px $font-primary;
+      text-transform: uppercase;
+      padding-left: 58px;
+      border-left: 5px solid #fff;
+      font-weight: bold;
+
+      @media (max-width: 860px) {
+        font: 30px $font-primary;
+        font-weight: bold;
+      }
+
+      @media (max-width: 470px) {
+        font: 20px $font-primary;
+        font-weight: bold;
+        padding-left: 25px;
+      }
+    }
+  }
+}

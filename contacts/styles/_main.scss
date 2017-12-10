@@ -1,0 +1,114 @@
+.breadcrumbs {
+  .container-main {
+    padding: 40px 15px;
+
+    a {
+      font: 20px $font-primary;
+      color: #303b73;
+    }
+    .bold {
+      font-weight: bold;
+    }
+  }
+}
+
+.main {
+  .container-main {
+    padding: 0 15px;
+
+    .row {
+      .item-top {
+        display: flex;
+        align-items: center;
+        background: #f8f8f8;
+        min-height: 235px;
+        margin-bottom: 30px;
+        font: 30px $font-primary;
+        color: #303b73;
+        font-weight: bold;
+        text-transform: uppercase;
+        justify-content: center;
+
+        ul {
+          li {
+            font: 16px $font-primary;
+            color: #000;
+            text-transform: none;
+            display: flex;
+            margin: 15px 0;
+
+            .fa-map-marker, .fa-user, .fa-at, .fa-phone, .fa-clipboard {
+              width: 30px;
+              margin-top: 8px;
+            }
+            .wrap-item {
+              display: flex;
+              flex-direction: column;
+
+              span {
+                font-weight: bold;
+              }
+            }
+          }
+        }
+        .item-top-first {
+          max-width: 261px;
+        }
+
+        .item-top-second {
+          max-width: 305px;
+
+        }
+        .item-top-third {
+          max-width: 259px;
+        }
+        .item-top-fourth {
+          max-width: 259px;
+        }
+      }
+    }
+
+    .item-bottom {
+      background: #f8f8f8;
+      min-height: 310px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+
+      .item-bottom-first, .item-bottom-second, .item-bottom-third, .item-bottom-fourth {
+        max-width: 296px;
+
+        li {
+          font: 16px $font-primary;
+          margin: 15px 0;
+        }
+
+        li:first-child {
+          font-weight: bold;
+          color: #303b73;
+          text-transform: uppercase;
+        }
+      }
+
+      .item-bottom-second {
+        max-width: 287px;
+      }
+
+      .item-bottom-third {
+        max-width: 280px;
+      }
+
+      .item-bottom-fourth {
+        max-width: 230px;
+      }
+    }
+  }
+}
+
+.map {
+  iframe {
+    width: 100%;
+    display: block;
+  }
+}

@@ -1,0 +1,25 @@
+.breadcrumbs {
+  .container {
+    a {
+      color: #303b73;
+      font: 20px $font-primery;
+      margin: 0;
+      &:hover {
+        text-decoration: underline;
+      }
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.main {
+  .container-main {
+    max-width: 1723px;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 24px 15px 30px;
+    position: relative;
+  }
+}
