@@ -168,7 +168,8 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    padding: 0 15px; }
     .main .container-main .item-bottom .item-bottom-first, .main .container-main .item-bottom .item-bottom-second, .main .container-main .item-bottom .item-bottom-third, .main .container-main .item-bottom .item-bottom-fourth {
       max-width: 296px; }
       .main .container-main .item-bottom .item-bottom-first li, .main .container-main .item-bottom .item-bottom-second li, .main .container-main .item-bottom .item-bottom-third li, .main .container-main .item-bottom .item-bottom-fourth li {
