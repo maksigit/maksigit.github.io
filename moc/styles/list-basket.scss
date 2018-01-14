@@ -1,0 +1,52 @@
+.wrap-list-basket {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, .5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .list-basket {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    background: #fff;
+
+    .shopping_list {
+      text-align: center;
+      td {
+        padding: 0 20px 0;
+      }
+    }
+
+  }
+  .close-list-basket {
+    position: relative;
+    //top: 0;
+    //right: 0;
+    top: -140px;
+    right: 17px;
+
+    cursor: pointer;
+
+    &:hover {
+      color: red;
+    }
+  }
+
+  #total-prise {
+    position: relative;
+    bottom: -80px;
+    left: -350px;
+    padding: 5px;
+  }
+
+  .clear-basket {
+    position: relative;
+    bottom: -120px;
+    left: -500px;
+  }
+}
