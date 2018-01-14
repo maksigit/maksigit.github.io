@@ -1,0 +1,38 @@
+.wrap-main {
+  .container {
+    #wrap {
+      margin-top: 70px;
+
+      .wrap-products {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .wrap-product {
+          margin: 0 0 10px 0;
+          padding: 10px;
+          border: 1px solid blue;
+          list-style-type: none;
+          width: 45%;
+
+          .btn-link {
+            background: -webkit-linear-gradient(top, #79d670, #4bbe3f);
+            padding: 5px;
+            cursor: pointer;
+
+            &:hover {
+              background: #247E1A;
+            }
+          }
+
+          li {
+            img {
+              width: 320px;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
