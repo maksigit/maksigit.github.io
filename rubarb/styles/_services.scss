@@ -1,0 +1,25 @@
+.services {
+  .container-main {
+    max-width: 1920px;
+
+    .container-fluid {
+      .wrap-item {
+        margin-top: 15px;
+
+        img {
+          max-width: 100%;
+        }
+
+        .item-bottom {
+          margin-top: 15px;
+        }
+      }
+
+      @media (max-width: 425px) {
+        padding: 0;
+      }
+    }
+
+
+  }
+}
