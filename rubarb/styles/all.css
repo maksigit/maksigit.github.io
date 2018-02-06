@@ -93,11 +93,12 @@
                 padding-left: 13px; }
               .main-header .container-main .main-menu li .bottling .container-main .col-lg-4 img {
                 max-width: 100%; }
-              @media (max-width: 425px) {
+              @media (max-width: 768px) {
                 .main-header .container-main .main-menu li .bottling .container-main .col-lg-4 {
                   flex-direction: column; }
                   .main-header .container-main .main-menu li .bottling .container-main .col-lg-4 a {
-                    margin-top: 10px; } }
+                    margin-top: 10px;
+                    padding: 0; } }
       .main-header .container-main .main-menu li:last-child a {
         border: 1px solid #cfcfcf;
         padding: 2px 5px; }
@@ -142,6 +143,29 @@
   .primary-main .pre-view .container-main {
     max-width: 1920px;
     padding: 0; }
+    .primary-main .pre-view .container-main .wrap-contacts {
+      margin-top: 15px;
+      text-align: center;
+      display: flex;
+      flex-direction: column-reverse; }
+      .primary-main .pre-view .container-main .wrap-contacts .wrap-tel {
+        display: none;
+        justify-content: space-between;
+        margin-top: 15px;
+        padding: 0 15px; }
+        .primary-main .pre-view .container-main .wrap-contacts .wrap-tel a {
+          font: bold 15px "MyriadProRegular", sans-serif;
+          color: #373737; }
+          .primary-main .pre-view .container-main .wrap-contacts .wrap-tel a span {
+            font: bold 15px "MyriadProRegular", sans-serif;
+            display: flex;
+            flex-direction: column; }
+        .primary-main .pre-view .container-main .wrap-contacts .wrap-tel a:last-child {
+          display: flex;
+          flex-direction: column-reverse; }
+        @media (max-width: 768px) {
+          .primary-main .pre-view .container-main .wrap-contacts .wrap-tel {
+            display: flex; } }
     .primary-main .pre-view .container-main .container-fluid .col-lg-4 .wrap-item {
       position: relative;
       background: #fff;
