@@ -1,0 +1,224 @@
+.primary-main {
+
+  .owl-carousel {
+    .owl-dots {
+      position: absolute;
+      bottom: 26px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      .owl-dot {
+        span {
+          background: #b2b2b2;
+          /* Rotate */
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+          /* Rotate Origin */
+          -webkit-transform-origin: 0 100%;
+          -moz-transform-origin: 0 100%;
+          -ms-transform-origin: 0 100%;
+          -o-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+          border-radius: 0;
+        }
+      }
+
+      .owl-dot.active {
+        span {
+          background: $color-black;
+        }
+      }
+
+      @media (max-width: 600px) {
+        bottom: calc(26px/2.5);
+      }
+
+      @media (max-width: 375px) {
+        bottom: 0;
+      }
+    }
+
+    .item {
+      .wrap-sale {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        .sale {
+          width: 260px;
+          height: 260px;
+          background: #d9bf8f;
+          display: flex;
+          flex-wrap: wrap;
+          align-content: space-around;
+          padding: 30px 0;
+          box-sizing: border-box;
+
+          li {
+            text-transform: uppercase;
+            text-align: center;
+            width: 100%;
+          }
+
+          li:first-child {
+            font: 19px $font-primary;
+            color: $color-white;
+
+          }
+
+          li:nth-child(2) {
+            font: 43px $font-primary;
+            color: $color-black;
+          }
+
+          li:nth-child(3) {
+            font: 20px $font-primary;
+            color: $color-white;
+            position: relative;
+
+            &:before {
+              content: "";
+              display: block;
+              width: 62px;
+              height: 1px;
+              background: $color-white;
+              position: absolute;
+              bottom: 0;
+              left: 34px;
+            }
+
+            &:after {
+              content: "";
+              display: block;
+              width: 62px;
+              height: 1px;
+              background: $color-white;
+              position: absolute;
+              bottom: 0;
+              left: 163px;
+            }
+          }
+
+          li:last-child {
+            font: 31px $font-primary;
+            color: $color-black;
+          }
+
+        }
+
+        .button-shop {
+          padding: 20px 25px;
+          background: $color-hover;
+          text-transform: uppercase;
+          color: $color-white;
+          font: 24px $font-primary;
+          box-sizing: border-box;
+          margin-top: 54px;
+          border: 1px solid $color-hover;
+
+          &:hover {
+            background: none;
+          }
+        }
+
+        @media (max-width: 1024px) {
+          .sale {
+            width: calc(260px/1.5);
+            height: calc(260px/1.5);
+            padding: calc(30px/1.5) 0;
+
+            li:first-child {
+              font: calc(19px/1.5) $font-primary;
+            }
+
+            li:nth-child(2) {
+              font: calc(43px/1.5) $font-primary;
+            }
+
+            li:nth-child(3) {
+              font: calc(20px/1.5) $font-primary;
+
+              &:before {
+                width: calc(62px/1.5);
+                left: calc(34px/1.5);
+              }
+
+              &:after {
+                width: calc(62px/1.5);
+                left: calc(163px/1.5);
+              }
+            }
+
+            li:last-child {
+              font: calc(31px/1.5) $font-primary;
+            }
+
+          }
+
+          .button-shop {
+            padding: calc(20px/1.5) calc(25px/1.5);
+            font: calc(24px/1.5) $font-primary;
+            margin-top: calc(54px/1.5);
+          }
+        }
+
+        @media (max-width: 768px) {
+          .sale {
+            width: calc(260px/2.5);
+            height: calc(260px/2.5);
+            padding: calc(30px/2.5) 0;
+
+            li:first-child {
+              font: calc(19px/2.5) $font-primary;
+            }
+
+            li:nth-child(2) {
+              font: calc(43px/2.5) $font-primary;
+            }
+
+            li:nth-child(3) {
+              font: calc(20px/2.5) $font-primary;
+
+              &:before {
+                width: calc(62px/2.5);
+                left: calc(34px/2.5);
+              }
+
+              &:after {
+                width: calc(62px/2.5);
+                left: calc(163px/2.5);
+              }
+            }
+
+            li:last-child {
+              font: calc(31px/2.5) $font-primary;
+            }
+
+          }
+
+          .button-shop {
+            padding: calc(20px/2.5) calc(25px/2.5);
+            font: calc(24px/2.5) $font-primary;
+            margin-top: calc(54px/2.5);
+          }
+        }
+        @media (max-width: 500px) {
+          flex-direction: row;
+
+          .button-shop {
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+  }
+}

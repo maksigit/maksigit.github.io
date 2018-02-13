@@ -1,0 +1,21 @@
+.container-main {
+  max-width: 1280px;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  transition: .4s;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline-block;
+  }
+}
