@@ -1,0 +1,40 @@
+.main-header {
+  background: url("../images/background.png") no-repeat center/cover;
+  min-height: 100vh;
+
+
+  .container-main {
+    padding: 60px 15px 54px;
+    height: 100vh;
+  }
+}
+
+.mobile-menu__list {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 60%;
+  background: rgba(252, 219, 0, .8);
+  padding: 15px;
+  font-family: $primary-font;
+  z-index: 9;
+}
+
+.mobile-menu__item {
+  padding: 15px 0;
+}
+
+.mobile-menu__link {
+  font-size: 18px;
+  color: $main-color;
+  transition: .4s;
+
+}
+
+.mobile-menu__item-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
