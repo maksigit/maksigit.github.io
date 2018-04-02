@@ -11,11 +11,72 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
               <caret line="66" column="32" lean-forward="true" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
+              <folding>
+                <element signature="n#style#0;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contacts.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contacts.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="65" column="67" lean-forward="false" selection-start-line="65" selection-start-column="67" selection-end-line="65" selection-end-column="67" />
+              <folding>
+                <element signature="n#style#0;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="catalog.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/catalog.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="65" column="59" lean-forward="true" selection-start-line="65" selection-start-column="59" selection-end-line="65" selection-end-column="67" />
+              <folding>
+                <element signature="n#style#0;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="card.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/card.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="65" column="67" lean-forward="false" selection-start-line="65" selection-start-column="67" selection-end-line="65" selection-end-column="67" />
+              <folding>
+                <element signature="n#style#0;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="basket.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/basket.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="65" column="67" lean-forward="false" selection-start-line="65" selection-start-column="67" selection-end-line="65" selection-end-column="67" />
+              <folding>
+                <element signature="n#style#0;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about-company.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/about-company.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="65" column="67" lean-forward="false" selection-start-line="65" selection-start-column="67" selection-end-line="65" selection-end-column="67" />
               <folding>
                 <element signature="n#style#0;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -37,6 +98,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/contacts.html" />
+        <option value="$PROJECT_DIR$/catalog.html" />
+        <option value="$PROJECT_DIR$/card.html" />
+        <option value="$PROJECT_DIR$/basket.html" />
+        <option value="$PROJECT_DIR$/about-company.html" />
       </list>
     </option>
   </component>
@@ -47,7 +113,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="55" />
     <option name="y" value="-4" />
     <option name="width" value="1311" />
@@ -113,15 +179,15 @@
       <option name="presentableId" value="Default" />
       <updated>1522313008274</updated>
       <workItem from="1522313009828" duration="1144000" />
-      <workItem from="1522666427246" duration="91000" />
+      <workItem from="1522666427246" duration="338000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1235000" />
+    <option name="totallyTimeSpent" value="1482000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="55" y="-4" width="1311" height="772" extended-state="7" />
+    <frame x="55" y="-4" width="1311" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25375494" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -169,6 +235,57 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="66" column="32" lean-forward="true" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contacts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="65" column="67" lean-forward="false" selection-start-line="65" selection-start-column="67" selection-end-line="65" selection-end-column="67" />
+          <folding>
+            <element signature="n#style#0;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="65" column="59" lean-forward="true" selection-start-line="65" selection-start-column="59" selection-end-line="65" selection-end-column="67" />
+          <folding>
+            <element signature="n#style#0;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/card.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="65" column="67" lean-forward="false" selection-start-line="65" selection-start-column="67" selection-end-line="65" selection-end-column="67" />
+          <folding>
+            <element signature="n#style#0;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basket.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="65" column="67" lean-forward="false" selection-start-line="65" selection-start-column="67" selection-end-line="65" selection-end-column="67" />
+          <folding>
+            <element signature="n#style#0;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about-company.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="65" column="67" lean-forward="false" selection-start-line="65" selection-start-column="67" selection-end-line="65" selection-end-column="67" />
           <folding>
             <element signature="n#style#0;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
