@@ -106,7 +106,6 @@ function createLi(val) {
         console.log(getId);
 
         for (let i = 0; i < itemLenght; i++) {
-            console.log(item[i].id);
             if(item[i].id == getId) {
 
                 if(item[i].flag) {
@@ -114,19 +113,27 @@ function createLi(val) {
                 } else {
                     item[i].flag = true
                 }
-
             }
         }
+        setToLoc(item);
 
-        for(let i = 0; i < itemLenght; i++) {
-            if(item[i].flag) {
-                buttonOn()
-            }
+        item = JSON.parse(localStorage.getItem('item'));
+
+        let test = item.find(function (element) {
+                return element.flag
+        });
+
+        console.log(test);
+
+        if (test) {
+            buttonOn()
+        } else {
+            document.querySelector('.remove-button').remove()
         }
+
         console.log(item);
         if (this.className === "line-through") {
             this.className = "item";
-
         } else {
             this.className = "line-through";
         }
