@@ -1,0 +1,77 @@
+.knowledge {
+  background: #f4f4f4;
+  padding: 67px 0 54px;
+
+  .container-knowledge {
+    max-width: 1378px;
+    box-sizing: border-box;
+    margin: auto;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 15px;
+
+    .item {
+      width: 316px;
+      margin: 30px auto 0;
+
+      .wrap-icon {
+        display: flex;
+        justify-content: flex-end;
+
+        .icon {
+          width: 283px;
+          height: 218px;
+        }
+
+        .icon-first {
+          background: url("../images/k1.png") no-repeat 50% 50%;
+        }
+        .icon-second {
+          background: url("../images/k2.png") no-repeat 50% 50%;
+        }
+        .icon-third {
+          background: url("../images/k3.png") no-repeat 50% 50%;
+        }
+      }
+
+      .wrap-desc-knowledge {
+        display: flex;
+        margin-top: 48px;
+
+        .number {
+          font: bold 100px $secondary-font;
+          margin-right: 60px;
+        }
+
+        .desc-knowledge {
+
+          li:not(:first-child) {
+            font: 18px $secondary-font;
+            margin-top: 10px;
+          }
+
+          li:first-child {
+            font: bold 30px $secondary-font;
+          }
+        }
+      }
+    }
+
+    .item:first-child {
+      margin-top: 0;
+    }
+
+    @media (min-width: 1000px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .item {
+        margin: 0;
+      }
+    }
+  }
+}
+
+
+

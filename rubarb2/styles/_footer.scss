@@ -1,0 +1,39 @@
+.main-footer {
+  padding: 44px 15px 8px;
+
+  .wrap-logo-social {
+    margin: auto;
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .wrap-social {
+      a:not(:last-child) {
+        margin-right: 20px;
+      }
+
+      .social-footer {
+        color: $black-color;
+      }
+    }
+
+    @media (min-width: 380px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .copyright {
+    margin: 42px auto 0;
+    font: 12px $secondary-font;
+    color: $black-color;
+    text-align: center;
+
+    .to-rubarb {
+      color: $black-color;
+      text-decoration: underline;
+    }
+  }
+}

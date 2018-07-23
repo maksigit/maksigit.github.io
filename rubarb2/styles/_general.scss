@@ -1,0 +1,45 @@
+.container {
+  max-width: 1265px;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+.block-title {
+  border: 4px solid $cornflower-blue;
+  font: bold 32px $secondary-font;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.button {
+  width: 224px;
+  font: bold 18px/50px $secondary-font;
+  text-align: center;
+  border: 2px solid transparent;
+  cursor: pointer;
+
+  &:hover {
+    background: $white-color !important;
+    border: 2px solid $border-hover-color;
+  }
+}

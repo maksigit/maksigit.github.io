@@ -1,0 +1,136 @@
+.contacts-us {
+  padding: 100px 0;
+  background: url("../images/loc.png") no-repeat center/cover;;
+
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+
+    .title-contacts {
+      font: bold 25px $secondary-font;
+      color: $white-color;
+      text-transform: uppercase;
+    }
+
+    .contacts {
+      max-width: 230px;
+
+      .location {
+        margin-top: 72px;
+
+        li {
+          margin-top: 55px;
+
+          a {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .icon-location {
+              color: $cornflower-blue;
+              margin-right: 20px;
+            }
+
+            .loc-desc {
+              font: 13px $secondary-font;
+              color: $white-color;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    .write-us {
+      margin-top: 30px;
+
+      .form-contacts {
+        margin-top: 72px;
+
+        .form-input {
+          input {
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+            padding: 15px;
+            background: transparent;
+            box-sizing: border-box;
+            border: 1px solid $white-color;
+            font-size: 12px;
+            color: $white-color;
+            text-transform: uppercase;
+            font-family: $secondary-font;
+
+            @media (min-width: 830px) {
+              display: inline;
+              width: 238px;
+              margin-right: 34px;
+
+              &:last-child {
+                margin-right: 0;
+              }
+            }
+          }
+
+          input::placeholder {
+            font: bold 12px $secondary-font;
+            text-transform: uppercase;
+            color: $white-color;
+          }
+        }
+
+        .form-texarea {
+          margin-top: 30px;
+          height: 100%;
+
+          textarea {
+            border: 1px solid $white-color;
+            width: 100%;
+            resize: none;
+            padding: 15px;
+            box-sizing: border-box;
+            background: transparent;
+            font-size: 12px;
+            color: $white-color;
+            text-transform: uppercase;
+            font-family: $secondary-font;
+          }
+
+          textarea::placeholder {
+            font: bold 12px $secondary-font;
+            text-transform: uppercase;
+            color: $white-color;
+          }
+        }
+
+        .submit {
+          display: flex;
+          align-items: center;
+          margin-top: 70px;
+
+          .button {
+            background: $cornflower-blue;
+            border: none;
+            margin-right: 59px;
+          }
+
+          .submit-send {
+            display: inline-block;
+            font: bold 19px $secondary-font;
+            color: $white-color;
+            width: 300px;
+          }
+        }
+      }
+
+      @media (min-width: 1070px) {
+        margin: 0;
+      }
+    }
+
+    @media (min-width: 1070px) {
+      display: flex;
+      justify-content: space-between;
+
+    }
+  }
+}
