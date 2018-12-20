@@ -53,7 +53,7 @@ function eventRemoveOnButton (e) {
 function buttonOn() {
     let removeButton = document.createElement('button');
     removeButton.className = 'remove-button';
-    removeButton.innerHTML = 'Удалить выбранные';
+    removeButton.innerHTML = 'Delete selected';
     removeButton.addEventListener('click', eventRemoveOnButton);
     listOutput.appendChild(removeButton);
 }
