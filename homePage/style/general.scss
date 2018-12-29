@@ -1,0 +1,32 @@
+.container-main {
+  font-size: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1540px;
+  padding: 15px;
+
+  @media (max-width: 1440px) {
+    font-size: 70%;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 50%;
+  }
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn {
+  margin-top: 2em;
+  font-size: 1.87em;
+  color: $color-dark-blue;
+  background: $color-white;
+  padding: 0.5em 0.9em;
+  border-radius: 15px;
+  font-family: $font-droid-sans;
+  font-weight: 700;
+}
