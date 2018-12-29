@@ -17,7 +17,7 @@
       width: 50%;
 
       .title-text {
-        font-size: 5.2em;
+        font-size: 5em;
         color: $color-white;
         margin: 0;
         font-weight: normal;
@@ -29,11 +29,11 @@
       }
 
       .subtitle-text {
-        font-size: 1.87em;
+        font-size: 1.7em;
         color: $color-white;
         margin-top: 1em;
         font-family: $font-droid-sans;
-        line-height: 1.3em;
+        line-height: 1.5em;
       }
     }
 
@@ -66,7 +66,7 @@
       width: 50%;
 
       .title-text {
-        font-size: 3.5em;
+        font-size: 3.2em;
         color: $color-mine-shaft;
         margin: 0;
         font-weight: normal;
@@ -75,11 +75,11 @@
       }
 
       .subtitle-text {
-        font-size: 1.87em;
+        font-size: 1.7em;
         color: $color-mine-shaft;
         margin-top: 1em;
         font-family: $font-droid-sans;
-        line-height: 1.3em;
+        line-height: 1.5em;
       }
     }
 
@@ -135,7 +135,7 @@
         color: $color-white;
         margin-top: 1em;
         font-family: $font-droid-sans;
-        line-height: 1.3em;
+        line-height: 1.5em;
         padding-top: 2em;
 
         .item {
@@ -205,7 +205,7 @@
         font-size: 1.87em;
         color: $color-mine-shaft;
         font-family: $font-droid-sans;
-        line-height: 1.3em;
+        line-height: 1.5em;
         max-width: 520px;
       }
     }
@@ -329,12 +329,12 @@
 
     .wrap-text {
       width: 100%;
-      max-width: 840px;
+      max-width: 875px;
       margin: auto;
       text-align: center;
 
       .title-text {
-        font-size: 5.2em;
+        font-size: 5em;
         color: $color-white;
         margin: 0;
         font-weight: normal;
@@ -347,7 +347,7 @@
         color: $color-white;
         margin: 1em auto 0;
         font-family: $font-droid-sans;
-        line-height: 1.3em;
+        line-height: 1.5em;
         max-width: 600px;
 
         .item {

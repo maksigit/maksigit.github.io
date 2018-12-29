@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'droid';
+  src: url('../fonts/droid.eot');
+  src: url('../fonts/droid.eot') format('embedded-opentype'),
+  url('../fonts/droid.woff2') format('woff2'),
+  url('../fonts/droid.woff') format('woff'),
+  url('../fonts/droid.ttf') format('truetype'),
+  url('../fonts/droid.svg#droid') format('svg');
+}
+
 header {
   .container-main {
     align-items: center;
