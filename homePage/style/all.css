@@ -234,7 +234,7 @@ header .container-main {
       .section-fifth .container-main .wrap-text .subtitle-text {
         display: flex;
         justify-content: space-between;
-        font-size: 1.87em;
+        font-size: 1.7em;
         color: #fff;
         margin-top: 1em;
         font-family: "droid", sans-serif;
@@ -282,7 +282,7 @@ header .container-main {
       margin: auto;
       text-align: center; }
       .section-sixth .container-main .wrap-text .title-text {
-        font-size: 5em;
+        font-size: 4.8em;
         color: #fff;
         margin: 0;
         font-weight: normal;
