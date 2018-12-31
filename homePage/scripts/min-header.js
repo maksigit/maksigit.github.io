@@ -9,12 +9,9 @@ window.onscroll = function() {
 };
 
 $(document).scroll(function () {
-
   if (scrolled > 0 && scrolled < 10) {
-    header.css({'padding': '10px'});
     logoImg.css({'max-width': '100%'});
   } else {
-    header.css({'padding': '10px'});
     logoImg.css({'max-width': '60%'});
   }
 });

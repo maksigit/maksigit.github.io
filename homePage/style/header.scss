@@ -34,7 +34,7 @@ header {
       list-style-type: none;
 
       li {
-        margin-right: 15px;
+        margin-right: 2.7vw;
 
         a {
           color: $color-dark-orange;
@@ -55,7 +55,7 @@ header {
         margin-right: 0;
       }
 
-      @media (max-width: 950px) {
+      @media (max-width: 1024px) {
         display: none;
         margin: 0;
         padding: 0;
@@ -92,9 +92,11 @@ header {
 
       i {
         color: $color-dark-orange;
+        width: 30px;
+        text-align: right;
       }
 
-      @media (max-width: 950px) {
+      @media (max-width: 1024px) {
         display: block;
       }
     }

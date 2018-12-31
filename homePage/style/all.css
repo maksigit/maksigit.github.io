@@ -48,7 +48,7 @@ header {
       display: flex;
       list-style-type: none; }
       header .container-main .menu-header li {
-        margin-right: 15px; }
+        margin-right: 2.7vw; }
         header .container-main .menu-header li a {
           color: #cc5e2e;
           font-size: 1.1em;
@@ -59,7 +59,7 @@ header {
             color: #0baec9; }
       header .container-main .menu-header li:last-child {
         margin-right: 0; }
-      @media (max-width: 950px) {
+      @media (max-width: 1024px) {
         header .container-main .menu-header {
           display: none;
           margin: 0;
@@ -82,8 +82,10 @@ header {
       display: none;
       font-size: 3em; }
       header .container-main .mobile-menu i {
-        color: #cc5e2e; }
-      @media (max-width: 950px) {
+        color: #cc5e2e;
+        width: 30px;
+        text-align: right; }
+      @media (max-width: 1024px) {
         header .container-main .mobile-menu {
           display: block; } }
 
