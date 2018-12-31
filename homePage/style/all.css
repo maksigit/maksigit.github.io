@@ -30,42 +30,69 @@ a {
   font-family: 'droid';
   src: url("../fonts/droid.eot");
   src: url("../fonts/droid.eot") format("embedded-opentype"), url("../fonts/droid.woff2") format("woff2"), url("../fonts/droid.woff") format("woff"), url("../fonts/droid.ttf") format("truetype"), url("../fonts/droid.svg#droid") format("svg"); }
-header .container-main {
-  align-items: center; }
-  header .container-main .logo img {
-    max-width: 100%; }
-  header .container-main .menu-header {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    list-style-type: none; }
-    header .container-main .menu-header li {
-      margin-right: 15px; }
-      header .container-main .menu-header li a {
-        color: #cc5e2e;
-        font-size: 1.1em;
-        font-family: "droid", sans-serif; }
-        header .container-main .menu-header li a i {
-          margin-right: 5px; }
-        header .container-main .menu-header li a:hover {
-          color: #0baec9; }
-    header .container-main .menu-header li:last-child {
-      margin-right: 0; }
-    @media (max-width: 950px) {
-      header .container-main .menu-header {
-        display: none; } }
-  header .container-main .mobile-menu {
-    padding: 5px;
-    display: none;
-    font-size: 3em; }
-    header .container-main .mobile-menu i {
-      color: #cc5e2e; }
-    @media (max-width: 950px) {
-      header .container-main .mobile-menu {
-        display: block; } }
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 2; }
+  header .container-main {
+    align-items: center;
+    padding: 10px; }
+    header .container-main .logo img {
+      max-width: 100%; }
+    header .container-main .menu-header {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      list-style-type: none; }
+      header .container-main .menu-header li {
+        margin-right: 15px; }
+        header .container-main .menu-header li a {
+          color: #cc5e2e;
+          font-size: 1.1em;
+          font-family: "droid", sans-serif; }
+          header .container-main .menu-header li a i {
+            margin-right: 5px; }
+          header .container-main .menu-header li a:hover {
+            color: #0baec9; }
+      header .container-main .menu-header li:last-child {
+        margin-right: 0; }
+      @media (max-width: 950px) {
+        header .container-main .menu-header {
+          display: none;
+          margin: 0;
+          padding: 0;
+          list-style-type: none; }
+          header .container-main .menu-header li {
+            margin-right: 15px; }
+            header .container-main .menu-header li a {
+              color: #cc5e2e;
+              font-size: 1.1em;
+              font-family: "droid", sans-serif; }
+              header .container-main .menu-header li a i {
+                margin-right: 5px; }
+              header .container-main .menu-header li a:hover {
+                color: #0baec9; }
+          header .container-main .menu-header li:last-child {
+            margin-right: 0; } }
+    header .container-main .mobile-menu {
+      padding-left: 10px;
+      display: none;
+      font-size: 3em; }
+      header .container-main .mobile-menu i {
+        color: #cc5e2e; }
+      @media (max-width: 950px) {
+        header .container-main .mobile-menu {
+          display: block; } }
+
+.active {
+  right: 50% !important; }
 
 .section-first {
-  background: radial-gradient(at bottom right, #d76c21 0%, #c85932 15%, #c85932 20%, #bd4a3f 35%, #9e2064 50%, #94176a 62%, #590d3f 100%); }
+  background: radial-gradient(at bottom right, #d76c21 0%, #c85932 15%, #c85932 20%, #bd4a3f 35%, #9e2064 50%, #94176a 62%, #590d3f 100%);
+  margin-top: 110px; }
   .section-first .container-main {
     padding: 6.2em 15px;
     justify-content: space-between;
@@ -319,11 +346,14 @@ header .container-main {
         .section-sixth .container-main .wrap-img {
           bottom: 5.5em; }
           .section-sixth .container-main .wrap-img img {
-            max-width: 40%; } }
+            max-width: 50%; } }
+      @media (max-width: 550px) {
+        .section-sixth .container-main .wrap-img img {
+          max-width: 35%; } }
     .section-sixth .container-main .pre-footer {
       margin-top: 24em;
       display: flex;
-      justify-content: flex-end; }
+      justify-content: center; }
       .section-sixth .container-main .pre-footer span {
         font-size: 1em;
         color: #0baec9; }
@@ -360,5 +390,30 @@ header .container-main {
         @media (max-width: 950px) {
           .section-sixth .container-main .pre-footer .mobile-menu {
             display: block; } }
+
+.menu-header-mobile {
+  z-index: 3;
+  box-sizing: border-box;
+  padding: 15px 15px 0 25px;
+  margin: 0;
+  list-style-type: none;
+  position: fixed;
+  right: 100%;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background: rgba(0, 0, 0, 0.9);
+  transition: .4s; }
+  .menu-header-mobile li {
+    margin-top: 20px; }
+    .menu-header-mobile li a {
+      display: block;
+      color: #cc5e2e;
+      font-size: 1.1em;
+      font-family: "droid", sans-serif; }
+      .menu-header-mobile li a i {
+        margin-right: 5px; }
+      .menu-header-mobile li a:hover {
+        color: #0baec9; }
 
 /*# sourceMappingURL=all.css.map */
