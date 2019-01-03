@@ -23,13 +23,17 @@ a {
   background: #fff;
   padding: 0.5em 0.9em;
   border-radius: 15px;
-  font-family: "droid", sans-serif;
-  font-weight: 700; }
+  font-family: "Droid Serif";
+  font-weight: 700;
+  transition: .4s; }
+  .btn:hover {
+    background: #430070;
+    color: #fff; }
 
 @font-face {
-  font-family: 'droid';
-  src: url("../fonts/droid.eot");
-  src: url("../fonts/droid.eot") format("embedded-opentype"), url("../fonts/droid.woff2") format("woff2"), url("../fonts/droid.woff") format("woff"), url("../fonts/droid.ttf") format("truetype"), url("../fonts/droid.svg#droid") format("svg"); }
+  font-family: 'Droid Serif';
+  src: url("../fonts/Droidserif.eot");
+  src: url("../fonts/Droidserif.eot") format("embedded-opentype"), url("../fonts/Droidserif.woff2") format("woff2"), url("../fonts/Droidserif.woff") format("woff"), url("../fonts/Droidserif.ttf") format("truetype"), url("../fonts/Droidserif.svg#Droidserif") format("svg"); }
 header {
   position: fixed;
   top: 0;
@@ -52,7 +56,7 @@ header {
         header .container-main .menu-header li a {
           color: #cc5e2e;
           font-size: 1.1em;
-          font-family: "droid", sans-serif; }
+          font-family: "Droid Serif"; }
           header .container-main .menu-header li a i {
             margin-right: 5px; }
           header .container-main .menu-header li a:hover {
@@ -70,7 +74,7 @@ header {
             header .container-main .menu-header li a {
               color: #cc5e2e;
               font-size: 1.1em;
-              font-family: "droid", sans-serif; }
+              font-family: "Droid Serif"; }
               header .container-main .menu-header li a i {
                 margin-right: 5px; }
               header .container-main .menu-header li a:hover {
@@ -103,18 +107,18 @@ header {
       color: #fff;
       width: 50%; }
       .section-first .container-main .wrap-text .title-text {
-        font-size: 5em;
+        font-size: 4.5em;
         color: #fff;
         margin: 0;
         font-weight: normal;
-        font-family: "droid", sans-serif; }
+        font-family: "Droid Serif"; }
         .section-first .container-main .wrap-text .title-text .italic {
           font-style: italic; }
       .section-first .container-main .wrap-text .subtitle-text {
-        font-size: 1.7em;
+        font-size: 1.6em;
         color: #fff;
         margin-top: 1em;
-        font-family: "droid", sans-serif;
+        font-family: "Droid Serif";
         line-height: 1.5em; }
     .section-first .container-main .wrap-img {
       width: 50%;
@@ -134,17 +138,17 @@ header {
   .section-second .container-main .wrap-text {
     width: 50%; }
     .section-second .container-main .wrap-text .title-text {
-      font-size: 3.2em;
+      font-size: 2.7em;
       color: #292929;
       margin: 0;
       font-weight: normal;
-      font-family: "droid", sans-serif;
+      font-family: "Droid Serif";
       max-width: 590px; }
     .section-second .container-main .wrap-text .subtitle-text {
-      font-size: 1.7em;
+      font-size: 1.6em;
       color: #292929;
       margin-top: 1em;
-      font-family: "droid", sans-serif;
+      font-family: "Droid Serif";
       line-height: 1.5em; }
   .section-second .container-main .wrap-img {
     width: 50%;
@@ -172,19 +176,19 @@ header {
     .section-third .container-main .wrap-text {
       width: 100%; }
       .section-third .container-main .wrap-text .title-text {
-        font-size: 3.5em;
+        font-size: 2.7em;
         color: #fff;
         margin: 0;
         font-weight: normal;
-        font-family: "droid", sans-serif;
+        font-family: "Droid Serif";
         text-align: center; }
       .section-third .container-main .wrap-text .subtitle-text {
         display: flex;
         justify-content: space-between;
-        font-size: 1.87em;
+        font-size: 1.6em;
         color: #fff;
         margin-top: 1em;
-        font-family: "droid", sans-serif;
+        font-family: "Droid Serif";
         line-height: 1.5em;
         padding-top: 2em; }
         .section-third .container-main .wrap-text .subtitle-text .item {
@@ -221,17 +225,17 @@ header {
     width: 50%;
     text-align: center; }
     .section-fourth .container-main .wrap-text .title-text {
-      font-size: 3.5em;
+      font-size: 2.7em;
       color: #292929;
       margin: 0;
       font-weight: normal;
-      font-family: "droid", sans-serif; }
+      font-family: "Droid Serif"; }
     .section-fourth .container-main .wrap-text .subtitle-text {
       margin: 1em auto 0;
       text-align: center;
-      font-size: 1.87em;
+      font-size: 1.5em;
       color: #292929;
-      font-family: "droid", sans-serif;
+      font-family: "Droid Serif";
       line-height: 1.5em;
       max-width: 520px; }
   .section-fourth .container-main .wrap-img {
@@ -255,18 +259,18 @@ header {
     .section-fifth .container-main .wrap-text {
       width: 100%; }
       .section-fifth .container-main .wrap-text .title-text {
-        font-size: 3.5em;
+        font-size: 2.7em;
         color: #fff;
         margin: 0;
         font-weight: normal;
-        font-family: "droid", sans-serif; }
+        font-family: "Droid Serif"; }
       .section-fifth .container-main .wrap-text .subtitle-text {
         display: flex;
         justify-content: space-between;
-        font-size: 1.7em;
+        font-size: 1.6em;
         color: #fff;
         margin-top: 1em;
-        font-family: "droid", sans-serif;
+        font-family: "Droid Serif";
         line-height: 1.3em;
         padding-top: 2em; }
         .section-fifth .container-main .wrap-text .subtitle-text .cosmonaut {
@@ -311,17 +315,17 @@ header {
       margin: auto;
       text-align: center; }
       .section-sixth .container-main .wrap-text .title-text {
-        font-size: 4.8em;
+        font-size: 4.4em;
         color: #fff;
         margin: 0;
         font-weight: normal;
-        font-family: "droid", sans-serif;
+        font-family: "Droid Serif";
         text-align: center; }
       .section-sixth .container-main .wrap-text .subtitle-text {
         font-size: 1.87em;
         color: #fff;
         margin: 1em auto 0;
-        font-family: "droid", sans-serif;
+        font-family: "Droid Serif";
         line-height: 1.5em;
         max-width: 600px; }
         .section-sixth .container-main .wrap-text .subtitle-text .item {
@@ -372,7 +376,7 @@ header {
           .section-sixth .container-main .pre-footer .menu-header li a {
             color: #0baec9;
             font-size: 1.1em;
-            font-family: "droid", sans-serif; }
+            font-family: "Droid Serif"; }
             .section-sixth .container-main .pre-footer .menu-header li a:hover {
               color: #cc5e2e; }
             .section-sixth .container-main .pre-footer .menu-header li a i {
@@ -412,7 +416,7 @@ header {
       display: block;
       color: #cc5e2e;
       font-size: 1.1em;
-      font-family: "droid", sans-serif; }
+      font-family: "Droid Serif"; }
       .menu-header-mobile li a i {
         margin-right: 5px; }
       .menu-header-mobile li a:hover {

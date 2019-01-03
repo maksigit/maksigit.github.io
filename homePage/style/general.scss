@@ -29,4 +29,10 @@ a {
   border-radius: 15px;
   font-family: $font-droid-sans;
   font-weight: 700;
+  transition: .4s;
+
+  &:hover {
+    background: $color-pigment-indigo;
+    color: $color-white;
+  }
 }
