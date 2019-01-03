@@ -31,17 +31,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="119" column="33" lean-forward="false" selection-start-line="119" selection-start-column="33" selection-end-line="119" selection-end-column="33" />
+            <state relative-caret-position="203">
+              <caret line="114" column="0" lean-forward="true" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="var.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="var.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style/var.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
@@ -80,8 +80,8 @@
         <option value="$PROJECT_DIR$/style/header.scss" />
         <option value="$PROJECT_DIR$/scripts/min-header.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/style/main.scss" />
         <option value="$PROJECT_DIR$/style/var.scss" />
+        <option value="$PROJECT_DIR$/style/main.scss" />
       </list>
     </option>
   </component>
@@ -184,12 +184,12 @@
       <workItem from="1546261593102" duration="16852000" />
       <workItem from="1546447810115" duration="44000" />
       <workItem from="1546457899556" duration="102000" />
-      <workItem from="1546507265603" duration="2835000" />
+      <workItem from="1546507265603" duration="3373000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22005000" />
+    <option name="totallyTimeSpent" value="22543000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="-4" width="1311" height="772" extended-state="6" />
@@ -515,18 +515,18 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="119" column="33" lean-forward="false" selection-start-line="119" selection-start-column="33" selection-end-line="119" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style/var.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="114" column="0" lean-forward="true" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
           <folding />
         </state>
       </provider>
