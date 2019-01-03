@@ -418,6 +418,7 @@ header {
       font-size: 1.1em;
       font-family: "Droid Serif"; }
       .menu-header-mobile li a i {
+        width: 20px;
         margin-right: 5px; }
       .menu-header-mobile li a:hover {
         color: #0baec9; }
