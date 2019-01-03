@@ -117,7 +117,7 @@ header {
       .section-first .container-main .wrap-text .subtitle-text {
         font-size: 1.6em;
         color: #fff;
-        margin-top: 1em;
+        margin-top: 2em;
         font-family: "Droid Serif";
         line-height: 1.5em; }
     .section-first .container-main .wrap-img {
@@ -147,7 +147,7 @@ header {
     .section-second .container-main .wrap-text .subtitle-text {
       font-size: 1.6em;
       color: #292929;
-      margin-top: 1em;
+      margin-top: 2em;
       font-family: "Droid Serif";
       line-height: 1.5em; }
   .section-second .container-main .wrap-img {
@@ -231,7 +231,7 @@ header {
       font-weight: normal;
       font-family: "Droid Serif"; }
     .section-fourth .container-main .wrap-text .subtitle-text {
-      margin: 1em auto 0;
+      margin: 2em auto 0;
       text-align: center;
       font-size: 1.5em;
       color: #292929;
