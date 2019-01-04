@@ -10,7 +10,7 @@
   margin-top: 110px;
 
   .container-main {
-    padding: 6.2em 15px;
+    padding: 8em 15px;
     justify-content: space-between;
     align-items: center;
 
@@ -114,7 +114,7 @@
   background: $color-mine-shaft;
 
   .container-main {
-    padding: 6.2em 15px;
+    padding: 8em 15px;
     justify-content: space-between;
     align-items: center;
     background: url("../img/milk-road1.png") no-repeat center/cover;
@@ -223,6 +223,12 @@
 
     @media (max-width: 1024px) {
       flex-direction: column;
+
+      .wrap-img {
+        img {
+          max-width: 60%;
+        }
+      }
 
       .wrap-text {
         margin-top: 3em;

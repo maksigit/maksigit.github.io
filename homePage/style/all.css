@@ -100,7 +100,7 @@ header {
   background: radial-gradient(at bottom right, #d76c21 0%, #c85932 15%, #c85932 20%, #bd4a3f 35%, #9e2064 50%, #94176a 62%, #590d3f 100%);
   margin-top: 110px; }
   .section-first .container-main {
-    padding: 6.2em 15px;
+    padding: 8em 15px;
     justify-content: space-between;
     align-items: center; }
     .section-first .container-main .wrap-text {
@@ -169,7 +169,7 @@ header {
 .section-third {
   background: #292929; }
   .section-third .container-main {
-    padding: 6.2em 15px;
+    padding: 8em 15px;
     justify-content: space-between;
     align-items: center;
     background: url("../img/milk-road1.png") no-repeat center/cover; }
@@ -246,6 +246,8 @@ header {
   @media (max-width: 1024px) {
     .section-fourth .container-main {
       flex-direction: column; }
+      .section-fourth .container-main .wrap-img img {
+        max-width: 60%; }
       .section-fourth .container-main .wrap-text {
         margin-top: 3em; }
       .section-fourth .container-main .wrap-img, .section-fourth .container-main .wrap-text {
