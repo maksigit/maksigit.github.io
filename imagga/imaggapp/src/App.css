@@ -16,8 +16,20 @@
 }
 
 .item {
-    padding: 5px;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid black;
+    position: relative;
+}
+
+.item .back-percent {
+    background: #3fc6b6;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.item .tag,.confidence {
+    z-index: 2;
+    padding: 5px;
 }
