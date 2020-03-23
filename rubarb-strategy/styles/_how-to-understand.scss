@@ -1,0 +1,52 @@
+.how-to-understand {
+  background: url("../images/Rectangle-41.png") no-repeat center/cover;
+  height: 12.28rem;
+  padding: .8rem 3.2rem 1.3rem;
+  position: relative;
+
+  .wrap-form {
+    position: absolute;
+    top: 4.3rem;
+    right: 3.2rem;
+
+    .form-main {
+      background-color: $white;
+      width: 6.64rem;
+      display: flex;
+      flex-direction: column;
+      padding: .7rem .48rem;
+
+      h2 {
+        font-family: 'Museo Sans Cyrl', sans-serif;
+        font-size: .35rem;
+        line-height: .3rem;
+        text-transform: uppercase;
+        color: $black;
+        text-align: center;
+      }
+
+      .font-middle {
+        margin-top: .09rem;
+        margin-bottom: .65rem;
+      }
+
+      input {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        padding: .1rem;
+        margin-top: .4rem;
+        border-color: $black;
+      }
+
+      .font-under-middle {
+        font-style: normal;
+        color: $black;
+      }
+
+      .btn {
+        border: none;
+      }
+    }
+  }
+}

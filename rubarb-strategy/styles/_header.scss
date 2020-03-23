@@ -1,0 +1,130 @@
+.main-header {
+  //position: fixed;
+  z-index: 3;
+  top: 0;
+  width: 100%;
+  background-color: $white;
+
+  .header-top {
+    background: $seashell;
+    display: flex;
+    justify-content: space-between;
+    padding: .1rem 1.87rem;
+
+    .header-top-left-col {
+      a {
+        margin-right: .15rem;
+      }
+
+      .font-small {
+        color: $black;
+
+        &__bold {
+          color: $black;
+        }
+      }
+    }
+
+    .wrap-language {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .language {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: .12rem;
+        line-height: .12rem;
+        color: $silver;
+        text-transform: uppercase;
+        transition: .4s;
+        cursor: pointer;
+        padding: 0 .03rem;
+
+        &:hover {
+          color: $black;
+        }
+
+        &:not(:last-child) {
+          border-right: 1px solid $silver;
+        }
+      }
+
+      .language.active-lng {
+        color: $black;
+      }
+    }
+  }
+
+  .header-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: .2rem 1.87rem;
+    background: $white;
+    transition: .4s;
+
+      .logo {
+        width: 1.3rem;
+        height: auto;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .wrap-menu {
+        display: flex;
+        align-items: center;
+
+        .menu-header {
+          display: flex;
+          justify-content: space-between;
+
+          li {
+            a {
+              font-family: 'Roboto', sans-serif;
+              font-style: normal;
+              font-weight: normal;
+              font-size: .14rem;
+              line-height: .14rem;
+              color: $black;
+            }
+
+            &:not(:last-child) {
+              margin-right: .15rem;
+            }
+
+            &:nth-child(3) {
+              a {
+                &:after {
+                  display: inline-block;
+                  content: '\203A';
+                  margin-left: .1rem;
+                  transform: rotate(90deg);
+                }
+              }
+            }
+          }
+        }
+      }
+
+
+    .mobile-menu-btn {
+      display: none;
+    }
+
+    &__fixed {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+      background: rgba(255, 255, 255, .95);
+      padding: .1rem 1.87rem;
+      -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+      -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+      box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+    }
+  }
+
+}

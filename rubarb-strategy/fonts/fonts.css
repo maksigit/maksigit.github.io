@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Museo Sans Cyrl';
+    src: url('./MuseoSansRegular/MuseoSansCyrl-300.woff2') format('woff2'),
+    url('./MuseoSansRegular/MuseoSansCyrl-300.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl Bold';
+    src: url('./MuseoSansBold/MuseoSansCyrl-900.woff2') format('woff2'),
+    url('./MuseoSansBold/MuseoSansCyrl-900.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('./RobotoBold/Roboto-Bold.woff2') format('woff2'),
+    url('./RobotoBold/Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('./RobotoRegular/Roboto-Regular.woff2') format('woff2'),
+    url('./RobotoRegular/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

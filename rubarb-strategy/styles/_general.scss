@@ -1,0 +1,336 @@
+html {
+  font-size: 5.2083vw;
+
+  @media screen and(max-width: $mobile) {
+    font-size: 24.0963vw;
+  }
+}
+
+main {
+  //margin-top: 1.15rem;
+}
+
+.container-banner {
+  width: 15.5rem;
+  box-sizing: border-box;
+  margin: auto;
+  position: relative;
+  padding: 0 .15rem;
+}
+
+.font-small {
+  font-family: 'Roboto', sans-serif;
+  font-size: .12rem;
+  line-height: .14rem;
+
+  &__bold {
+    font-family: 'Roboto Bold', sans-serif;
+    font-size: .12rem;
+    line-height: .14rem;
+  }
+}
+
+.font-under-middle {
+  font-family: 'Museo Sans Cyrl', sans-serif ;
+  font-size: .2rem;
+  line-height: .2rem;
+  color: $black;
+
+  &__bold {
+    font-family: 'Museo Sans Cyrl Bold', sans-serif ;
+    font-size: .2rem;
+    line-height: .2rem;
+    color: $black;
+  }
+}
+
+.font-middle {
+  font-family: 'Museo Sans Cyrl', sans-serif;
+  font-size: .24rem;
+  line-height: .30rem;
+  color: $black;
+
+  &__bold {
+    font-family: 'Museo Sans Cyrl Bold', sans-serif;
+    font-size: .24rem;
+    line-height: .30rem;
+    color: $black;
+  }
+}
+
+.main-title-section {
+  width: 8.5rem;
+  margin: auto;
+
+  .main-quote {
+    width: 5.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-bottom: .2rem;
+
+    svg {
+      width: .5rem;
+      height: .4rem;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      width: 2rem;
+      height: 1px;
+      background-color: $mercury;
+    }
+    &:after {
+      content: '';
+      display: block;
+      width: 2rem;
+      height: 1px;
+      background-color: $mercury;
+    }
+  }
+
+  h2 {
+    font-family: 'Museo Sans Cyrl', sans-serif;
+    font-size: .6rem;
+    line-height: .6rem;
+    text-align: center;
+    color: $black;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    width: 5.7rem;
+    height: 1px;
+    background-color: $mercury;
+    margin: .4rem auto 0;
+  }
+}
+
+.main-subtitle-section {
+  font-family: 'Museo Sans Cyrl', sans-serif;
+  font-size: .3rem;
+  line-height: .3rem;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.bold-light-font-style {
+  font-family: 'Museo Sans Cyrl Bold', sans-serif;
+  font-size: .96rem;
+  line-height: .96rem;
+  text-transform: uppercase;
+  color: #E2E2E2;
+}
+
+.btn {
+  padding: .19rem .4rem;
+  background: $sushi;
+  color: $white;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+}
+
+//ANIMATION
+
+.animation {
+  opacity: 0;
+  -webkit-transform: translate(0, 70px) scale(.95);
+  transform: translate(0, 70px) scale(.95);
+  -webkit-transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
+}
+
+.animation-1 {
+  opacity: 0;
+  -webkit-transform: translate(0, 70px) scale(.95);
+  transform: translate(0, 70px) scale(.95);
+  -webkit-transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
+  transition-delay: .5s;
+}
+.animation-2 {
+  opacity: 0;
+  -webkit-transform: translate(0, 70px) scale(.95);
+  transform: translate(0, 70px) scale(.95);
+  -webkit-transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
+  transition-delay: 1s;
+}
+.animation-3 {
+  opacity: 0;
+  -webkit-transform: translate(0, 70px) scale(.95);
+  transform: translate(0, 70px) scale(.95);
+  -webkit-transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
+  transition-delay: 1.5s;
+}
+.animation-4 {
+  opacity: 0;
+  -webkit-transform: translate(0, 70px) scale(.95);
+  transform: translate(0, 70px) scale(.95);
+  -webkit-transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
+  transition-delay: 3s;
+}
+.animation-5 {
+  opacity: 0;
+  -webkit-transform: translate(0, 70px) scale(.95);
+  transform: translate(0, 70px) scale(.95);
+  -webkit-transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
+  transition-delay: 3.5s;
+}
+
+.animation-left {
+  opacity: 0;
+  -webkit-transform: translateX(-3rem) scale(.95);
+  transform: translateX(-3rem) scale(.95);
+  -webkit-transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
+}
+.animation-left-1 {
+  opacity: 0;
+  -webkit-transform: translateX(-3rem) scale(.95);
+  transform: translateX(-3rem) scale(.95);
+  -webkit-transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
+  transition-delay: .5s;
+}
+.animation-left-2 {
+  opacity: 0;
+  -webkit-transform: translateX(-3rem) scale(.95);
+  transform: translateX(-3rem) scale(.95);
+  -webkit-transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
+  transition-delay: 1s;
+}
+.animation-left-3 {
+  opacity: 0;
+  -webkit-transform: translateX(-3rem) scale(.95);
+  transform: translateX(-3rem) scale(.95);
+  -webkit-transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
+  transition-delay: 1.5s;
+}
+.animation-left-4 {
+  opacity: 0;
+  -webkit-transform: translateX(-3rem) scale(.95);
+  transform: translateX(-3rem) scale(.95);
+  -webkit-transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
+  transition-delay: 2s;
+}
+.animation-left-5 {
+  opacity: 0;
+  -webkit-transform: translateX(-3rem) scale(.95);
+  transform: translateX(-3rem) scale(.95);
+  -webkit-transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
+  transition-delay: 2.5s;
+}
+.animation-left-6 {
+  opacity: 0;
+  -webkit-transform: translateX(-3rem) scale(.95);
+  transform: translateX(-3rem) scale(.95);
+  -webkit-transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
+  transition-delay: 3s;
+}
+.animation-left-7 {
+  opacity: 0;
+  -webkit-transform: translateX(-3rem) scale(.95);
+  transform: translateX(-3rem) scale(.95);
+  -webkit-transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
+  transition-delay: 3.5s;
+}
+.animation-left-8 {
+  opacity: 0;
+  -webkit-transform: translateX(-3rem) scale(.95);
+  transform: translateX(-3rem) scale(.95);
+  -webkit-transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
+  transition-delay: 4s;
+}
+.animation-left-9 {
+  opacity: 0;
+  -webkit-transform: translateX(-3rem) scale(.95);
+  transform: translateX(-3rem) scale(.95);
+  -webkit-transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
+  transition-delay: 4.5s;
+}
+.animation-left-10 {
+  opacity: 0;
+  -webkit-transform: translateX(-3rem) scale(.95);
+  transform: translateX(-3rem) scale(.95);
+  -webkit-transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
+  transition-delay: 5s;
+}
+.animation-left-11 {
+  opacity: 0;
+  -webkit-transform: translateX(-3rem) scale(.95);
+  transform: translateX(-3rem) scale(.95);
+  -webkit-transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
+  transition-delay: 5.5s;
+}
+
+.animation-right {
+  opacity: 0;
+  -webkit-transform: translateX(3rem) scale(.95);
+  transform: translateX(3rem) scale(.95);
+  -webkit-transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
+}
+
+.in-view {
+  opacity: 1;
+  -webkit-transform: translate(0, 0) translateX(0) scale(1);
+  transform: translate(0, 0) translateX(0) scale(1);
+}
+
+
+

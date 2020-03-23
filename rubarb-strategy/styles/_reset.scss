@@ -1,0 +1,82 @@
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+html, body {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+html {
+    font-size: 7.320644216691069vw;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font: 14px 'Neucha';
+    line-height: 1.5;
+}
+
+div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, td, tr, form, fieldset, label, select, input, textarea, header, nav, section, article, aside, footer, blockquote {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    list-style: none;
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+header, nav, section, article, aside, footer {
+    display: block
+}
+
+select, input, textarea {
+    font: italic 14px 'Neucha';
+    color: #e5e5e5;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+textarea {
+    vertical-align: top;
+    resize: none;
+}
+
+:focus {
+    outline: none;
+}
+
+input[type=submit], button {
+    cursor: pointer;
+}
+
+img, fieldset {
+    border: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    font: 14px 'Neucha';
+    color: #58595b;
+    text-decoration: none;
+    display: inline-block
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+::-moz-selection {
+    background: #FEAD36;
+    color: #fafafa;
+}
+::selection {
+    background: #FEAD36;
+    color: #fafafa;
+}

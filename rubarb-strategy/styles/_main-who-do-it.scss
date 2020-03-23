@@ -1,0 +1,479 @@
+.main-who-do-it {
+  padding: 0 3rem 1rem;
+
+  .font-middle {
+    text-align: center;
+    margin-top: .1rem;
+  }
+
+  .wrap-customer-agency {
+    display: flex;
+    justify-content: space-between;
+    margin-top: .95rem;
+    margin-bottom: 1.59rem;
+
+    .bold-light-font-style {
+      margin-top: .1rem;
+    }
+
+    .customer {
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+
+      .wrap-relation {
+        .font-middle {
+          margin: unset;
+        }
+
+        .arrows-relation {
+          display: flex;
+          flex-direction: column;
+
+          svg {
+            width: 1.72rem;
+            height: .16rem;
+
+            &:last-child {
+              margin-top: .25rem;
+            }
+          }
+        }
+      }
+    }
+
+    .agency {
+      width: 43%;
+
+      .bold-light-font-style {
+        text-align: right;
+      }
+
+      .wrap-agency-lists {
+        display: flex;
+        justify-content: space-between;
+        margin-top: .9rem;
+
+        .agency-list {
+          .font-middle {
+            text-align: left;
+            margin: 0;
+            position: relative;
+
+            &__bold {
+              font-size: .2rem;
+              margin-bottom: .1rem;
+            }
+
+            &:before {
+              content: '';
+              width: 5px;
+              height: 5px;
+              border-radius: 50%;
+              background: #000;
+              position: absolute;
+              left: 0;
+              top: 50%;
+            }
+
+            padding-left: .1rem;
+          }
+        }
+      }
+    }
+  }
+
+  .main-subtitle-section {
+    text-align: center;
+  }
+
+  .wrap-stages {
+    display: flex;
+    margin-top: .85rem;
+    margin-bottom: 3.3rem;
+    position: relative;
+    padding-top: .15rem;
+
+    .stage {
+      width: 1.75rem;
+
+      .font-under-middle {
+        text-align: center;
+        margin-top: .55rem;
+
+        &__bold {
+          text-transform: uppercase;
+          text-align: center;
+          width: 1.7rem;
+        }
+      }
+
+      .line {
+        width: 100%;
+        height: 5px;
+        background-color: $black;
+        position: relative;
+        margin-top: .1rem;
+
+        &:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: -.07rem;
+          display: block;
+          width: .2rem;
+          height: .2rem;
+          border-radius: 50%;
+          background-color: $black;
+        }
+      }
+    }
+
+    .stage.step2 {
+      width: 1.74rem;
+      position: relative;
+      z-index: 1;
+
+      .font-under-middle {
+        margin-top: .55rem;
+        position: absolute;
+        left: .55rem;
+      }
+
+      .line {
+        margin-top: .85rem;
+
+        &:after {
+          position: absolute;
+          right: -.66rem;
+          top: -.3rem;
+          content: 'старт';
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: .66rem;
+          height: .66rem;
+          border-radius: 50%;
+          background-color: $red;
+          color: $white;
+          font-family: 'Museo Sans Cyrl Bold', sans-serif;
+          font-size: .2rem;
+          line-height: .3rem;
+          z-index: 2;
+        }
+      }
+    }
+
+    .stage.step3 {
+      width: 1.4rem;
+      position: relative;
+
+      .font-under-middle {
+        margin-top: .93rem;
+        position: absolute;
+        right: -.3rem;
+
+        &__bold {
+          width: unset;
+          text-transform: lowercase;
+          margin-top: .6rem;
+        }
+      }
+
+      .line {
+        margin-top: 1.25rem;
+
+        &:before {
+          display: none;
+        }
+      }
+    }
+
+    .stage.step4 {
+      width: .78rem;
+      position: relative;
+
+      .font-under-middle {
+        margin-top: .15rem;
+        position: absolute;
+        right: -.3rem;
+
+        &__bold {
+          width: unset;
+          text-transform: lowercase;
+          margin-top: .6rem;
+        }
+      }
+
+      .line {
+        position: relative;
+        margin-top: .45rem;
+
+        &:after {
+          content: '';
+          position: absolute;
+          right: 0;
+          top: -.07rem;
+          display: block;
+          width: .2rem;
+          height: .2rem;
+          border-radius: 50%;
+          background-color: $black;
+        }
+      }
+    }
+
+    .stage.step5 {
+      width: .53rem;
+      position: relative;
+      z-index: 1;
+
+      .line {
+        margin-top: 1.25rem;
+
+        &:after {
+          position: absolute;
+          right: -.66rem;
+          top: -.3rem;
+          content: '3 мес';
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: .66rem;
+          height: .66rem;
+          border-radius: 50%;
+          background-color: $red;
+          color: $white;
+          font-family: 'Museo Sans Cyrl Bold', sans-serif;
+          font-size: .2rem;
+          line-height: .3rem;
+          z-index: 2;
+        }
+
+        &:before {
+          display: none;
+        }
+      }
+
+      svg {
+        position: absolute;
+        right: -.45rem;
+        top: 1.4rem;
+        z-index: 2;
+      }
+
+      .info-box {
+        position: absolute;
+        left: -.2rem;
+        width: max-content;
+        padding: .08rem;
+        background-color: $white;
+        margin-top: .55rem;
+
+        .font-under-middle {
+          margin-top: unset;
+
+          &__bold {
+            text-transform: lowercase;
+            margin-top: .1rem;
+            width: unset;
+          }
+        }
+      }
+    }
+
+    .stage.step6 {
+      width: 1.4rem;
+      position: relative;
+
+      .font-under-middle {
+        margin-top: .93rem;
+        position: absolute;
+        right: -.3rem;
+
+        &__bold {
+          width: unset;
+          text-transform: lowercase;
+          margin-top: .6rem;
+        }
+      }
+
+      .line {
+        margin-top: 1.25rem;
+
+        &:before {
+          display: none;
+        }
+      }
+    }
+
+    .stage.step8 {
+      width: .53rem;
+      position: relative;
+      z-index: 1;
+
+      .line {
+        margin-top: 1.25rem;
+
+        &:after {
+          position: absolute;
+          right: -.66rem;
+          top: -.3rem;
+          content: '6 мес';
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: .66rem;
+          height: .66rem;
+          border-radius: 50%;
+          background-color: $red;
+          color: $white;
+          font-family: 'Museo Sans Cyrl Bold', sans-serif;
+          font-size: .2rem;
+          line-height: .3rem;
+          z-index: 2;
+        }
+
+        &:before {
+          display: none;
+        }
+      }
+
+      svg {
+        position: absolute;
+        right: -.45rem;
+        top: 1.4rem;
+        z-index: 2;
+      }
+
+      .info-box {
+        position: absolute;
+        left: -.2rem;
+        width: max-content;
+        padding: .08rem;
+        background-color: $white;
+        margin-top: .55rem;
+
+        .font-under-middle {
+          margin-top: unset;
+
+          &__bold {
+            text-transform: lowercase;
+            margin-top: .1rem;
+            width: unset;
+          }
+        }
+      }
+    }
+
+    .stage.step9 {
+      width: .53rem;
+      position: relative;
+
+      .line {
+        margin-top: 1.25rem;
+
+        &:after {
+          position: absolute;
+          right: -.66rem;
+          top: -.3rem;
+          content: '9 мес';
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: .66rem;
+          height: .66rem;
+          border-radius: 50%;
+          background-color: $red;
+          color: $white;
+          font-family: 'Museo Sans Cyrl Bold', sans-serif;
+          font-size: .2rem;
+          line-height: .3rem;
+          z-index: 2;
+        }
+
+        &:before {
+          display: none;
+        }
+      }
+
+      svg {
+        position: absolute;
+        right: -.45rem;
+        top: 1.4rem;
+        z-index: 2;
+      }
+
+      .info-box {
+        width: 1.10rem;
+        position: absolute;
+        left: .3rem;
+        padding: .08rem;
+        background-color: $white;
+        margin-top: .55rem;
+
+        .font-under-middle {
+          margin-top: unset;
+
+          &__bold {
+            text-transform: lowercase;
+            margin-top: .1rem;
+            width: unset;
+          }
+        }
+      }
+    }
+
+    .grey-background {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 8.66rem;
+      height: 3.41rem;
+      background: $seashell;
+      z-index: -1;
+      padding-top: .15rem;
+
+      .font-under-middle__bold {
+        text-transform: uppercase;
+        text-align: center;
+      }
+    }
+  }
+
+  .font-middle-individually {
+    font-family: 'Museo Sans Cyrl', sans-serif;
+    font-size: .18rem;
+    line-height: .3rem;
+    color: $black;
+    text-align: center;
+    margin-top: .08rem;
+    margin-bottom: .25rem;
+  }
+
+  .pay-strategy {
+    font-family: 'Museo Sans Cyrl Bold', sans-serif;
+    font-size: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    color: $black;
+
+    span {
+      color: $red;
+      position: relative;
+
+      &:after {
+        content: '*‎оплата при достижении результата KPI';
+        display: block;
+        font-family: 'Museo Sans Cyrl Bold', sans-serif;
+        font-size: .24rem;
+        line-height: .3rem;
+        color: #FF0000;
+        width: 2rem;
+        position: absolute;
+        left: .8rem;
+        text-align: left;
+      }
+    }
+  }
+}

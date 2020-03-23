@@ -1,0 +1,212 @@
+.main-strategy {
+  padding: .8rem 3.15rem 2rem;
+
+  .main-title-section {
+    .main-quote {
+    }
+  }
+
+  .main-triangle-one {
+    text-align: center;
+    margin-top: .2rem;
+    position: relative;
+
+    svg {
+      width: 4.6rem;
+      height: 3.68rem;
+    }
+
+    .triangle-content {
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translateX(50%) translateY(-30%);
+
+      .triangle-title {
+        font-family: 'Museo Sans Cyrl Bold', sans-serif;
+        font-size: .25rem;
+        line-height: .25rem;
+        text-transform: uppercase;
+        color: #333333;
+        margin-bottom: .07rem;
+      }
+
+      .triangle-answer {
+        font-family: 'Museo Sans Cyrl', sans-serif;
+        font-size: .2rem;
+        line-height: .3rem;
+        color: $black;
+      }
+
+      .triangle-question {
+        font-family: 'Museo Sans Cyrl Bold', sans-serif;
+        font-size: .2rem;
+        line-height: .3rem;
+        text-align: center;
+        color: $black;
+      }
+    }
+  }
+
+  .wrap-triangle {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: .6rem;
+
+    svg {
+      width: 4.6rem;
+      height: 3.68rem;
+    }
+
+    .main-triangle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      .triangle-content {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translateX(50%) translateY(-30%);
+        text-align: center;
+
+        .triangle-title {
+          font-family: 'Museo Sans Cyrl Bold', sans-serif;
+          font-size: .25rem;
+          line-height: .25rem;
+          text-transform: uppercase;
+          color: #333333;
+          margin-bottom: .07rem;
+        }
+
+        .triangle-answer {
+          font-family: 'Museo Sans Cyrl', sans-serif;
+          font-size: .2rem;
+          line-height: .3rem;
+          color: $black;
+        }
+
+        .triangle-question {
+          font-family: 'Museo Sans Cyrl Bold', sans-serif;
+          font-size: .2rem;
+          line-height: .3rem;
+          text-align: center;
+          color: $black;
+        }
+      }
+    }
+
+    .introduction {
+      position: absolute;
+      font-family: 'Museo Sans Cyrl Bold', sans-serif;
+      font-size: .25rem;
+      line-height: .25rem;
+      text-align: center;
+      text-transform: uppercase;
+      color: $red;
+      width: 1.52rem;
+      top: .5rem;
+    }
+  }
+
+  .font-middle {
+    margin: 0 auto .2rem;
+    text-align: center;
+    width: 9.5rem;
+
+    &__bold {
+      width: 9.5rem;
+      text-align: center;
+      margin: 0 auto 1.8rem;
+    }
+  }
+
+  .main-subtitle-section {
+    margin-bottom: .7rem;
+    text-align: center;
+  }
+
+  .wrap-main-blocks {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.4rem;
+
+    .main-block {
+      display: flex;
+
+      img {
+        margin-right: .15rem;
+        width: 1.39rem;
+        height: 1.39rem;
+      }
+
+      .advertising-list {
+        .font-middle {
+          text-align: left;
+          margin-bottom: .05rem;
+          width: unset;
+          padding-left: .1rem;
+          position: relative;
+
+          &:before {
+            content: '';
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: $black;
+            position: absolute;
+            left: 0;
+            top: 50%;
+          }
+
+          &__bold {
+            margin-bottom: .12rem;
+            text-align: left;
+            width: unset;
+          }
+        }
+      }
+    }
+  }
+
+  .wrap-main-blocks-advertising-by-time {
+    display: flex;
+    justify-content: space-between;
+
+    .main-block {
+
+      .font-middle__bold {
+        width: 2.5rem;
+        margin: auto;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      &:not(:last-child) {
+        margin-right: .15rem;
+      }
+    }
+  }
+// ANIMATION TRIANGLE
+  .main-triangle-one.in-view svg path, .main-triangle.in-view svg path {
+    fill:none;
+    stroke:#000;
+    stroke-dashoffset:1305.5;
+    stroke-dasharray:1305.5;
+    animation: circle_stroke 2s ease-in forwards;
+  }
+
+  @keyframes circle_stroke {
+    0% {
+      stroke-dashoffset: 1305.5;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+}

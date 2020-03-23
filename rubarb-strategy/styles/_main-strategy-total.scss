@@ -1,0 +1,45 @@
+.main-strategy-total {
+  padding: 0 2.9rem 1rem;
+
+  .wrap-list-total-strategy {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.48rem;
+
+    .list-total-strategy-col {
+      width: 45%;
+
+      .list-total-strategy {
+        display: flex;
+
+        .bold-light-font-style {
+          margin-right: .4rem;
+          width: 1.19rem;
+        }
+
+        .list-current-number {
+
+          .font-middle {
+            margin-top: .05rem;
+
+            &__bold {
+              margin-bottom: .1rem;
+            }
+          }
+
+          .example-pdf {
+            font-family: 'Museo Sans Cyrl Bold', sans-serif ;
+            font-size: .18rem;
+            line-height: .3rem;
+            text-decoration-line: underline;
+            color: $sushi;
+          }
+        }
+
+        &:not(:first-child) {
+          margin-top: .85rem;
+        }
+      }
+    }
+  }
+}
