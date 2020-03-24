@@ -31,6 +31,8 @@
 
         ul {
           li {
+            line-height: .25rem;
+
             a {
               color: #7e7c7c;
               font-family: "Museo Sans Cyrl", sans-serif;
@@ -206,5 +208,24 @@
       border: 2px solid $sushi;
       background: transparent;
     }
+  }
+
+  @media screen and(max-width: $mobile) {
+    padding: .15rem;
+    flex-direction: column;
+  }
+}
+
+#copyright {
+  position: relative;
+  font-size: .12rem;
+  line-height: .12rem;
+  padding: .1rem 1.87rem;
+  color: #555;
+  background-color: #111;
+  font-family: 'Museo Sans Cyrl', sans-serif;
+
+  @media screen and(max-width: $mobile) {
+    padding: .1rem .15rem;
   }
 }

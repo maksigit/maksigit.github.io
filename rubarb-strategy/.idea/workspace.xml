@@ -32,14 +32,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="ECMAScript 6" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/fonts/MuseoSans500" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$/fonts/MuseoSans500" />
       <recent name="$PROJECT_DIR$/fonts" />
-      <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$/fonts/RobotoBold" />
       <recent name="$PROJECT_DIR$/fonts/MuseoSansBold" />
     </key>
@@ -63,7 +63,7 @@
       <workItem from="1584855972846" duration="47778000" />
       <workItem from="1584948107047" duration="17717000" />
       <workItem from="1584971906982" duration="406000" />
-      <workItem from="1585029172232" duration="21607000" />
+      <workItem from="1585029172232" duration="38093000" />
     </task>
     <servers />
   </component>

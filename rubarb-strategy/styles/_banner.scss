@@ -1,8 +1,33 @@
 .banner {
   position: relative;
 
-  img {
-    width: 100%;
+  .banner-bg-desktop {
+    display: block;
+
+    img {
+      width: 100%;
+    }
+
+    @media screen and(max-width: $mobile) {
+      display: none;
+    }
+  }
+
+  .banner-bg-mobile {
+    display: none;
+
+    img {
+      width: 100%;
+
+      @media screen and(max-width: $mobile) {
+        height: 100%;
+      }
+    }
+
+    @media screen and(max-width: $mobile) {
+      display: block;
+      height: 100vh;
+    }
   }
 
   .container-banner {
@@ -27,6 +52,10 @@
         text-transform: uppercase;
         color: #838181;
         margin-bottom: .13rem;
+
+        @media screen and(max-width: $mobile){
+          font-size: .2rem;
+        }
       }
 
       .banner-section-title {
@@ -36,15 +65,29 @@
         color: $white;
         max-width: 5.5rem;
         margin-bottom: .29rem;
+
+        @media screen and(max-width: $mobile){
+          font-size: .5rem;
+          line-height: .5rem;
+        }
       }
 
       .banner-section-desc {
         font-family: 'Museo Sans Cyrl 500', sans-serif;
-        font-weight: 500;
         font-size: .35rem;
         line-height: .42rem;
         text-transform: uppercase;
         color: $white;
+
+        @media screen and(max-width: $mobile){
+          font-size: .2rem;
+          line-height: .24rem;
+        }
+      }
+
+      @media screen and(max-width: $mobile){
+        width: 3.8rem;
+        position: static;
       }
     }
 
@@ -62,16 +105,35 @@
         background: url('../images/p1.png') no-repeat center/cover;
         width: 9.79rem;
         height: 7.45rem;
+
+        @media screen and(max-width: $mobile){
+          width: 4rem;
+          height: 3.5rem;
+        }
       }
       .parallax__layer:nth-of-type(2) {
         background: url('../images/p2.png') no-repeat center/cover;
         width: 10.38rem;
         height: 6.45rem;
+
+        @media screen and(max-width: $mobile){
+          width: 4rem;
+          height: 3.5rem;
+        }
+      }
+
+      @media screen and(max-width: $mobile){
+        width: 100%;
+        height: 3.5rem;
       }
     }
 
     @media screen and(max-width: $mobile){
-      flex-direction: column;
+      flex-direction: column-reverse;
+      transform: unset;
+      top: 0;
+      left: 0;
+      width: 100%;
     }
   }
 
@@ -90,5 +152,9 @@
 
     transform: rotate(90deg);
     transform-origin: right top 0;
+
+    @media screen and(max-width: $mobile){
+      display: none;
+    }
   }
 }

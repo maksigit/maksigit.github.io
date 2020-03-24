@@ -15,6 +15,10 @@
         .bold-light-font-style {
           margin-right: .4rem;
           width: 1.19rem;
+
+          @media screen and(max-width: $mobile) {
+            width: unset;
+          }
         }
 
         .list-current-number {
@@ -24,13 +28,13 @@
 
             &__bold {
               margin-bottom: .1rem;
-              font-family: 'Museo Sans Cyrl 500', sans-serif ;
+              font-family: 'Museo Sans Cyrl 500', sans-serif;
               text-transform: uppercase;
             }
           }
 
           .example-pdf {
-            font-family: 'Museo Sans Cyrl Bold', sans-serif ;
+            font-family: 'Museo Sans Cyrl Bold', sans-serif;
             font-size: .18rem;
             line-height: .3rem;
             text-decoration-line: underline;
@@ -40,8 +44,29 @@
 
         &:not(:first-child) {
           margin-top: .85rem;
+
+          @media screen and(max-width: $mobile) {
+            margin-top: .3rem;
+          }
+        }
+      }
+
+      @media screen and(max-width: $mobile) {
+        width: 100%;
+
+        &:first-child {
+          margin-bottom: .3rem;
         }
       }
     }
+
+    @media screen and(max-width: $mobile) {
+      flex-direction: column;
+      margin-top: .6rem;
+    }
+  }
+
+  @media screen and(max-width: $mobile) {
+    padding: .15rem;
   }
 }

@@ -1,6 +1,10 @@
 html {
   font-size: 5.2083vw;
 
+  //@media screen and(max-width: $tablets) {
+  //  font-size: 13.0208vw;
+  //}
+
   @media screen and(max-width: $mobile) {
     font-size: 24.0963vw;
   }
@@ -56,6 +60,14 @@ main {
     line-height: .30rem;
     color: $black;
   }
+
+  @media screen and(max-width: $mobile) {
+    font-size: .18rem;
+
+    &__bold {
+      font-size: .18rem;
+    }
+  }
 }
 
 .main-title-section {
@@ -81,6 +93,10 @@ main {
       width: 2rem;
       height: 1px;
       background-color: $mercury;
+
+      @media screen and(max-width: $mobile) {
+        width: 1rem
+      }
     }
     &:after {
       content: '';
@@ -88,6 +104,14 @@ main {
       width: 2rem;
       height: 1px;
       background-color: $mercury;
+
+      @media screen and(max-width: $mobile) {
+        width: 1rem
+      }
+    }
+
+    @media screen and(max-width: $mobile) {
+      width: 100%;
     }
   }
 
@@ -97,6 +121,11 @@ main {
     line-height: .6rem;
     text-align: center;
     color: $black;
+
+    @media screen and(max-width: $mobile) {
+      font-size: .3rem;
+      line-height: .3rem;
+    }
   }
 
   &:after {
@@ -106,6 +135,14 @@ main {
     height: 1px;
     background-color: $mercury;
     margin: .4rem auto 0;
+
+    @media screen and(max-width: $mobile) {
+      width: 100%
+    }
+  }
+
+  @media screen and(max-width: $mobile) {
+    width: 100%;
   }
 }
 
@@ -123,6 +160,11 @@ main {
   line-height: .96rem;
   text-transform: uppercase;
   color: #E2E2E2;
+
+  @media screen and(max-width: $mobile) {
+    font-size: .5rem;
+    line-height: .5rem;
+  }
 }
 
 .btn {
