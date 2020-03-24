@@ -1,5 +1,4 @@
 .main-header {
-  //position: fixed;
   z-index: 3;
   top: 0;
   width: 100%;
@@ -60,7 +59,8 @@
   .header-bottom {
     display: flex;
     justify-content: space-between;
-    padding: .2rem 1.87rem;
+    align-items: center;
+    padding: 0 1.87rem;
     background: $white;
     transition: .4s;
 
@@ -89,6 +89,14 @@
               font-size: .14rem;
               line-height: .14rem;
               color: $black;
+              transition: .3s;
+              padding: .4rem 0;
+              border-bottom: 2px solid transparent;
+
+              &:hover {
+                color: $sushi;
+                border-bottom: 2px solid $sushi;
+              }
             }
 
             &:not(:last-child) {
@@ -120,10 +128,19 @@
       width: 100%;
       z-index: 999;
       background: rgba(255, 255, 255, .95);
-      padding: .1rem 1.87rem;
       -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
       -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
       box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+
+      .wrap-menu {
+        .menu-header {
+          li {
+            a {
+              padding: .2rem 0;
+            }
+          }
+        }
+      }
     }
   }
 

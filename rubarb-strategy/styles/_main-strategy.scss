@@ -1,5 +1,5 @@
 .main-strategy {
-  padding: .8rem 3.15rem 2rem;
+  padding: .8rem 3.15rem 1.83rem;
 
   .main-title-section {
     .main-quote {
@@ -120,56 +120,13 @@
     &__bold {
       width: 9.5rem;
       text-align: center;
-      margin: 0 auto 1.8rem;
+      margin: auto;
     }
   }
 
   .main-subtitle-section {
     margin-bottom: .7rem;
     text-align: center;
-  }
-
-  .wrap-main-blocks {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1.4rem;
-
-    .main-block {
-      display: flex;
-
-      img {
-        margin-right: .15rem;
-        width: 1.39rem;
-        height: 1.39rem;
-      }
-
-      .advertising-list {
-        .font-middle {
-          text-align: left;
-          margin-bottom: .05rem;
-          width: unset;
-          padding-left: .1rem;
-          position: relative;
-
-          &:before {
-            content: '';
-            width: 5px;
-            height: 5px;
-            border-radius: 50%;
-            background: $black;
-            position: absolute;
-            left: 0;
-            top: 50%;
-          }
-
-          &__bold {
-            margin-bottom: .12rem;
-            text-align: left;
-            width: unset;
-          }
-        }
-      }
-    }
   }
 
   .wrap-main-blocks-advertising-by-time {
@@ -210,3 +167,4 @@
     }
   }
 }
+

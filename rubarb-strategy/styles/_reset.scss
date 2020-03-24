@@ -34,9 +34,9 @@ select, input, textarea {
     font: italic 14px 'Neucha';
     color: #e5e5e5;
     vertical-align: middle;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+    //-webkit-appearance: none;
+    //-moz-appearance: none;
+    //appearance: none;
 }
 
 textarea {

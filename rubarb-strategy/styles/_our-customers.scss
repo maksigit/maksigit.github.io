@@ -4,7 +4,33 @@
     text-align: center;
     margin-bottom: .5rem;
   }
-  img {
-    width: 100%;
+  .clients-logo {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+      width: 25%;
+      height: 2.5rem;
+      border: 1px solid #e1e1e1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      filter: grayscale(1);
+
+      img {
+        opacity: 0.7;
+        transition: .4s;
+      }
+
+      &:hover {
+        filter: grayscale(0);
+
+        img {
+          opacity: 1;
+        }
+      }
+
+    }
   }
 }
