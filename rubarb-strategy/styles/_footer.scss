@@ -19,7 +19,7 @@
         margin-bottom: .25rem;
 
         a {
-          font-family: "Museo Sans Cyrl", sans-serif;
+          font-family: "Museo Sans Cyrl 700", sans-serif;
           font-size: .16rem;
           color: $white;
           transition: .2s;
@@ -174,6 +174,9 @@
       width: 100%;
       margin-top: .1rem;
       border: none;
+      color: #999;
+      font-family: 'Museo Sans Cyrl 500',sans-serif;
+      font-style: normal;
     }
 
     input[name="agreement"] {
@@ -195,7 +198,7 @@
     margin-top: .3rem;
     border: 2px solid $sushi;
     background: $sushi;
-    font-family: 'Museo Sans Cyrl', sans-serif;
+    font-family: 'Museo Sans Cyrl 700', sans-serif;
     transition: .3s;
     transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
 

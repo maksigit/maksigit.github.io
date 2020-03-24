@@ -31,17 +31,20 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="ECMAScript 6" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/fonts/MuseoSans500" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/fonts" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/fonts/MuseoSans500" />
+      <recent name="$PROJECT_DIR$/fonts" />
+      <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$/fonts/RobotoBold" />
       <recent name="$PROJECT_DIR$/fonts/MuseoSansBold" />
-      <recent name="$PROJECT_DIR$/images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/fonts/MuseoSans700" />
       <recent name="$PROJECT_DIR$/fonts" />
     </key>
   </component>
@@ -60,7 +63,7 @@
       <workItem from="1584855972846" duration="47778000" />
       <workItem from="1584948107047" duration="17717000" />
       <workItem from="1584971906982" duration="406000" />
-      <workItem from="1585029172232" duration="13374000" />
+      <workItem from="1585029172232" duration="21607000" />
     </task>
     <servers />
   </component>
@@ -72,5 +75,9 @@
       <screen x="1920" y="0" width="1366" height="768" />
     </state>
     <state x="2409" y="154" width="424" height="484" key="FileChooserDialogImpl/1920.0.1366.768/47.27.1873.1053@1920.0.1366.768" timestamp="1585030896462" />
+    <state x="2259" y="0" width="709" height="768" key="find.popup" timestamp="1585044882856">
+      <screen x="1920" y="0" width="1366" height="768" />
+    </state>
+    <state x="2259" y="0" width="709" height="768" key="find.popup/1920.0.1366.768/47.27.1873.1053@1920.0.1366.768" timestamp="1585044882856" />
   </component>
 </project>

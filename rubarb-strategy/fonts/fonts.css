@@ -29,3 +29,19 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Museo Sans Cyrl 700';
+    src: url('./MuseoSans700/MuseoSansCyrl-700.woff2') format('woff2'),
+    url('./MuseoSans700/MuseoSansCyrl-700.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl 500';
+    src: url('./MuseoSans500/MuseoSansCyrl-500.woff2') format('woff2'),
+    url('./MuseoSans500/MuseoSansCyrl-500.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

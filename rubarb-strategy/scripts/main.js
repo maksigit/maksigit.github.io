@@ -31,6 +31,8 @@ $(document).ready(function () {
         });
     }
 
+    // FIX HEADER
+
     function fixed_header() {
         var $main_header = $('.header-bottom');
 
@@ -47,4 +49,8 @@ $(document).ready(function () {
         $window.on('scroll resize', fixed_header);
         $window.trigger('scroll');
     }
+
+    // PARALLAX BLOCK
+
+    $('.card').transformHeroes();
 });

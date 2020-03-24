@@ -110,7 +110,7 @@ main {
 }
 
 .main-subtitle-section {
-  font-family: 'Museo Sans Cyrl', sans-serif;
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
   font-size: .3rem;
   line-height: .3rem;
   text-transform: uppercase;
@@ -131,6 +131,14 @@ main {
   color: $white;
   text-transform: uppercase;
   margin-top: 1.5rem;
+  transition: .3s;
+  border: 2px solid $sushi;
+
+  &:hover {
+    background: none;
+    color: $sushi;
+    border: 2px solid $sushi;
+  }
 }
 
 //ANIMATION
@@ -153,7 +161,7 @@ main {
   transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
-  transition-delay: .5s;
+  transition-delay: .2s;
 }
 .animation-2 {
   opacity: 0;
@@ -163,7 +171,7 @@ main {
   transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
-  transition-delay: 1s;
+  transition-delay: .4s;
 }
 .animation-3 {
   opacity: 0;
@@ -173,7 +181,7 @@ main {
   transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
-  transition-delay: 1.5s;
+  transition-delay: .6s;
 }
 .animation-4 {
   opacity: 0;
@@ -183,7 +191,7 @@ main {
   transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
-  transition-delay: 3s;
+  transition-delay: 1.2s;
 }
 .animation-5 {
   opacity: 0;
@@ -193,7 +201,7 @@ main {
   transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
-  transition-delay: 3.5s;
+  transition-delay: 1.4s;
 }
 
 .animation-left {
@@ -213,7 +221,7 @@ main {
   transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
-  transition-delay: .5s;
+  transition-delay: .2s;
 }
 .animation-left-2 {
   opacity: 0;
@@ -223,7 +231,7 @@ main {
   transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
-  transition-delay: 1s;
+  transition-delay: .4s;
 }
 .animation-left-3 {
   opacity: 0;
@@ -233,7 +241,7 @@ main {
   transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
-  transition-delay: 1.5s;
+  transition-delay: .6s;
 }
 .animation-left-4 {
   opacity: 0;
@@ -243,7 +251,7 @@ main {
   transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
-  transition-delay: 2s;
+  transition-delay: .8s;
 }
 .animation-left-5 {
   opacity: 0;
@@ -253,7 +261,7 @@ main {
   transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
-  transition-delay: 2.5s;
+  transition-delay: 1s;
 }
 .animation-left-6 {
   opacity: 0;
@@ -263,7 +271,7 @@ main {
   transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
-  transition-delay: 3s;
+  transition-delay: 1.2s;
 }
 .animation-left-7 {
   opacity: 0;
@@ -273,7 +281,7 @@ main {
   transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
-  transition-delay: 3.5s;
+  transition-delay: 1.4s;
 }
 .animation-left-8 {
   opacity: 0;
@@ -283,7 +291,7 @@ main {
   transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
-  transition-delay: 4s;
+  transition-delay: 1.6s;
 }
 .animation-left-9 {
   opacity: 0;
@@ -293,7 +301,7 @@ main {
   transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
-  transition-delay: 4.5s;
+  transition-delay: 1.8s;
 }
 .animation-left-10 {
   opacity: 0;
@@ -303,7 +311,7 @@ main {
   transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
-  transition-delay: 5s;
+  transition-delay: 2s;
 }
 .animation-left-11 {
   opacity: 0;
@@ -313,7 +321,7 @@ main {
   transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
-  transition-delay: 5.5s;
+  transition-delay: 2.2s;
 }
 
 .animation-right {
@@ -333,4 +341,19 @@ main {
 }
 
 
+// PARALLAX BLOCK
 
+.card {
+  position: relative;
+  //width: 2rem;
+  //height: 2rem;
+  transform: rotateX(0) rotateY(0);
+  transform-style: preserve-3d;
+  //transition-duration: 0.1s;
+  transition-timing-function: ease !important;
+}
+
+.card.is-out {
+  transform: rotateX(0) rotateY(0) !important;
+  transition-duration: 1s;
+}
