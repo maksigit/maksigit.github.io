@@ -254,6 +254,11 @@ main {
   transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
+
+  @media screen and(max-width: $mobile) {
+    -webkit-transform: translate(0, 70px) scale(.95);
+    transform: translate(0, 70px) scale(.95);
+  }
 }
 .animation-left-1 {
   opacity: 0;
@@ -374,6 +379,11 @@ main {
   transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
+
+  @media screen and(max-width: $mobile) {
+    -webkit-transform: translate(0, 70px) scale(.95);
+    transform: translate(0, 70px) scale(.95);
+  }
 }
 
 .in-view {

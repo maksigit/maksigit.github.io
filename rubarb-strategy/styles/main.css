@@ -269,6 +269,10 @@ html {
   transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease; }
+  @media screen and (max-width: 425px) {
+    .animation-left {
+      -webkit-transform: translate(0, 70px) scale(0.95);
+      transform: translate(0, 70px) scale(0.95); } }
 
 .animation-left-1 {
   opacity: 0;
@@ -388,6 +392,10 @@ html {
   transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease;
   transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease; }
+  @media screen and (max-width: 425px) {
+    .animation-right {
+      -webkit-transform: translate(0, 70px) scale(0.95);
+      transform: translate(0, 70px) scale(0.95); } }
 
 .in-view {
   opacity: 1;
