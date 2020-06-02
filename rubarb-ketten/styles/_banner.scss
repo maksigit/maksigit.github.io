@@ -33,7 +33,6 @@
 
     .wrap-img {
       width: 10.20rem;
-      height: 8.43rem;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -90,7 +89,7 @@
 
   .dstu {
     position: absolute;
-    top: 3rem;
+    top: 2.8rem;
     left: 3.10rem;
     z-index: 1;
 
@@ -109,9 +108,9 @@
       transform: rotate(90deg);
       transform-origin: left top 0;
       position: absolute;
-      top: 0;
+      top: -.1rem;
       left: -.34rem;
-      width: 4.5rem;
+      width: 2.6rem;
     }
 
     &__right {
