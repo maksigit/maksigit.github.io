@@ -1,0 +1,148 @@
+.banner {
+  height: 100vh;
+
+  &__slider {
+    position: relative;
+  }
+
+  .slick-slider {
+    height: 100%;
+
+    .slick-list {
+      height: inherit;
+
+      .slick-track {
+        height: inherit;
+      }
+    }
+  }
+
+  &__slider-single-wrap {
+    position: relative;
+  }
+
+  &__slider-single {
+    width: 13.50rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    //margin-left: auto;
+    //margin-right: 0;
+    position: absolute;
+    right: .6rem;
+
+    .wrap-img {
+      width: 10.20rem;
+      height: 8.43rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__slider-single-desc {
+    h1 {
+      font-size: .80rem;
+      line-height: .94rem;
+      text-transform: uppercase;
+      font-family: 'Roboto Condensed Bold', sans-serif;
+      color: $white-color;
+    }
+
+    .font-above-small {
+      width: 3.3rem;
+      color: $botticelli-color;
+    }
+  }
+
+  &__slider-single-desc-subtitle {
+    width: 4.2rem;
+    font-size: .22rem;
+    color: $botticelli-color;
+    margin-top: .21rem;
+  }
+
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+  }
+
+  .slick-prev {
+    left: .15rem;
+    z-index: 1;
+  }
+
+  .slick-next {
+    right: .15rem;
+
+  }
+
+  &__circle {
+    width: 6.41rem;
+    height: 6.41rem;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    position: absolute;
+    top: 1.06rem;
+    right: 3.09rem;
+    z-index: 1;
+  }
+
+  .dstu {
+    position: absolute;
+    top: 3rem;
+    left: 3.10rem;
+    z-index: 1;
+
+
+    &__top {
+      //display: flex;
+      //width: 4.50rem;
+      height: 2.52rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    &__left {
+      color: $manatee-color;
+      transform: rotate(90deg);
+      transform-origin: left top 0;
+      position: absolute;
+      top: 0;
+      left: -.34rem;
+      width: 4.5rem;
+    }
+
+    &__right {
+      width: 1.65rem;
+
+      .font-small {
+        letter-spacing: 0.4em;
+        color: $botticelli-color;
+      }
+    }
+
+    &__right-bottom {
+      display: flex;
+      justify-content: space-between;
+      margin-top: .21rem;
+      align-items: center;
+
+      span {
+        font-size: .60rem;
+        line-height: .70rem;
+        color: $botticelli-color;
+        font-family: 'Roboto Condensed Bold', sans-serif;
+        margin-right: .1rem;
+      }
+
+      div {
+        font-size: .20rem;
+        line-height: .23rem;
+        text-transform: uppercase;
+        color: $botticelli-color;
+      }
+    }
+  }
+}
