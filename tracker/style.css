@@ -1,3 +1,3 @@
-.inner-parent {
+.outer-parent .inner-parent {
     background: #ccc;
 }
